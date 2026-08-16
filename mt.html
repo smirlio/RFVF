@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista MT - RFVF</title>
+  <style>
+    body { font-family: sans-serif; background: #121212; color: #fff; margin: 0; padding: 15px; }
+    h1 { text-align: center; color: #ffcb05; }
+    .nav { display: flex; gap: 10px; margin-bottom: 15px; }
+    .nav a { background: #333; color: #fff; text-decoration: none; padding: 8px 12px; border-radius: 6px; font-weight: bold; }
+    .search-input { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: none; box-sizing: border-box; }
+    table { width: 100%; border-collapse: collapse; background: #1e1e1e; }
+    th, td { padding: 10px; text-align: left; border-bottom: 1px solid #333; }
+    th { background: #2a2a2a; color: #ffcb05; }
+  </style>
+</head>
+<body>
+
+  <div class="nav">
+    <a href="index.html">← Torna al Pokédex</a>
+  </div>
+
+  <h1>Lista Macchine Tecniche (MT)</h1>
+  <input type="text" id="search" class="search-input" placeholder="Cerca MT o Mossa..." oninput="filterMT()">
+
+  <table id="mt-table">
+    <thead>
+      <tr>
+        <th>N°</th>
+        <th>Mossa</th>
+        <th>Tipo</th>
+        <th>Ottenimento</th>
+      </tr>
+    </thead>
+    <tbody id="mt-list">
+      <!-- Aggiungi le tue MT qui -->
+      <tr><td>MT01</td><td>Centripugno</td><td>Lotta</td><td>Sofficeopoli / Via Vittoria</td></tr>
+      <tr><td>MT02</td><td>Dragartigli</td><td>Drago</td><td>Grotta Dimenticata</td></tr>
+      <tr><td>MT03</td><td>Idropulsar</td><td>Acqua</td><td>Palestra di Celestopoli</td></tr>
+      <tr><td>MT04</td><td>Calmamente</td><td>Psico</td><td>Palestra di Zafferanopoli</td></tr>
+      <tr><td>MT05</td><td>Boato</td><td>Normale</td><td>Percorso 4 / Smeraldopoli</td></tr>
+    </tbody>
+  </table>
+
+  <script>
+    function filterMT() {
+      const q = document.getElementById('search').value.toLowerCase();
+      const rows = document.querySelectorAll('#mt-list tr');
+      rows.forEach(r => {
+        r.style.display = r.innerText.toLowerCase().includes(q) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>
