@@ -1,10 +1,69 @@
 <html><head>
 <style>
-    body { font-family: Arial, sans-serif; background-color: #121212; color: #fff; padding: 5px; }
+    <body>
+
+  <div class="container">
+    <!-- Colonna Sinistra: MT -->
+    <div class="table-wrapper">
+      <h2>Macchine Tecniche (MT)</h2>
+      <!-- Inserisci qui la tua tabella MT esistente -->
+    </div>
+
+    <!-- Colonna Destra: Move Tutor -->
+    <div class="table-wrapper">
+      <h2>Insegnamosse (Move Tutor)</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Mossa</th>
+            <th>Luogo / Requisito</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Aiporaffica</td><td>Percorso 15 (Casa)</td></tr>
+          <tr><td>Sostituto</td><td>Fucsia (Vicino alla Palestra)</td></tr>
+          <tr><td>Metronomo</td><td>Isola 2 (Laboratorio)</td></tr>
+          <tr><td>Movimento Sismico</td><td>Pezzo di Roccia (Isola 1)</td></tr>
+          <tr><td>Contropiede</td><td>Celestopoli (Dietro la casa)</td></tr>
+          <tr><td>Elettrocannone</td><td>Centrale Elettrica</td></tr>
+          <tr><td>Megapugno</td><td>Percorso 4</td></tr>
+          <tr><td>Megacalcio</td><td>Percorso 4</td></tr>
+          <tr><td>Rafforza</td><td>Azzurropoli (Centro Commerciale)</td></tr>
+          <tr><td>Maledizione</td><td>Celestopoli (Casa del Pescatore)</td></tr>
+          <tr><td>Mangiasogni</td><td>Smeraldopoli</td></tr>
+          <tr><td>Esplosione</td><td>Isola 1 (Monte Brace)</td></tr>
+          <tr><td>Frana</td><td>Via Vittoria</td></tr>
+          <tr><td>Doppia Squadra</td><td>Zona Safari</td></tr>
+          <tr><td>Psichico</td><td>Zafferanopoli</td></tr>
+          <tr><td>Radicamento</td><td>Isola 7</td></tr>
+          <tr><td>Idrocannone / Incendio / Radicalbero</td><td>Isola 2 (Mantello del drago per starter)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
     table { border-collapse: collapse; margin: 0 auto; background: #1e1e1e; width: auto; box-shadow: 0 0 6px rgba(0,0,0,0.5); }
     th { background-color: #3B4CCA; color: white; padding: 4px 8px; font-size: 12px; }
     td { padding: 2px 6px; border-bottom: 1px solid #333; font-size: 12px; text-align: center; height: 22px; color: #fff; }
     tr:nth-child(even) { background-color: #252525; }
+    .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+.table-wrapper {
+  flex: 1;
+  min-width: 300px;
+}
+h2 {
+  text-align: center;
+  color: #ffcb05;
+  font-size: 16px;
+  margin-top: 10px;
+}
 </style>
 </head><body><table><tr><th>MT</th><th>Mossa</th><th>Tipo</th><th>Posizione</th></tr>
     <tr>
