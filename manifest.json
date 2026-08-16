@@ -1,0 +1,15 @@
+{
+  "name": "Guida Pokédex Gen 3",
+  "short_name": "Pokédex",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#cb0000",
+  "icons": [
+    {
+      "src": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/poke-ball.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,1428 @@
+[
+  {
+    "id": 1,
+    "nome": "Bulbasaur",
+    "tipi": [
+      "Erba",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 4 Ruggito | Lvl. 7 Parassiseme | Lvl. 10 Frustata | Lvl. 15 Velenpolvere | Lvl. 15 Sonnifero | Lvl. 20 Foglielama | Lvl. 25 Profumino | Lvl. 32 Crescita | Lvl. 39 Sintesi | Lvl. 46 Solarraggio",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Forza | Solarraggio | Tossina | Doppioteam | Flash | Riposo | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Semitraglia"
+  },
+  {
+    "id": 2,
+    "nome": "Ivysaur",
+    "tipi": [
+      "Erba",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Ruggito | Lvl. 1 Parassiseme | Lvl. 4 Ruggito | Lvl. 7 Parassiseme | Lvl. 10 Frustata | Lvl. 15 Velenpolvere | Lvl. 15 Sonnifero | Lvl. 22 Foglielama | Lvl. 29 Profumino | Lvl. 38 Crescita | Lvl. 47 Sintesi | Lvl. 56 Solarraggio",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Forza | Solarraggio | Tossina | Doppioteam | Flash | Riposo | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Semitraglia"
+  },
+  {
+    "id": 3,
+    "nome": "Venusaur",
+    "tipi": [
+      "Erba",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Frustata | Lvl. 1 Azione | Lvl. 1 Ruggito | Lvl. 1 Parassiseme | Lvl. 4 Ruggito | Lvl. 7 Parassiseme | Lvl. 10 Frustata | Lvl. 15 Velenpolvere | Lvl. 15 Sonnifero | Lvl. 22 Foglielama | Lvl. 29 Profumino | Lvl. 41 Crescita | Lvl. 53 Sintesi | Lvl. 65 Solarraggio",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Radicalbero (Tutor) | Taglio | Boato | Iper Raggio | Forza | Solarraggio | Terremoto | Tossina | Doppioteam | Flash | Riposo | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Semitraglia"
+  },
+  {
+    "id": 4,
+    "nome": "Charmander",
+    "tipi": [
+      "Fuoco"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Ruggito | Lvl. 7 Braciere | Lvl. 13 Ferrartigli | Lvl. 19 Muro di Fumo | Lvl. 25 Visotruce | Lvl. 31 Lanciafiamme | Lvl. 37 Lacerazione | Lvl. 43 Ira di Drago | Lvl. 49 Turbofuoco",
+    "mosse_tm": "Megapugno (Tutor) | Danzaspada (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Lanciafiamme | Forza | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Vampata | Aeroassalto | Dragartigli"
+  },
+  {
+    "id": 5,
+    "nome": "Charmeleon",
+    "tipi": [
+      "Fuoco"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Ruggito | Lvl. 1 Braciere | Lvl. 7 Braciere | Lvl. 13 Ferrartigli | Lvl. 20 Muro di Fumo | Lvl. 27 Visotruce | Lvl. 34 Lanciafiamme | Lvl. 41 Lacerazione | Lvl. 48 Ira di Drago | Lvl. 55 Turbofuoco",
+    "mosse_tm": "Megapugno (Tutor) | Danzaspada (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Lanciafiamme | Forza | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Vampata | Aeroassalto | Dragartigli"
+  },
+  {
+    "id": 6,
+    "nome": "Charizard",
+    "tipi": [
+      "Fuoco",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Ruggito | Lvl. 1 Braciere | Lvl. 1 Ferrartigli | Lvl. 1 Ondacalda | Lvl. 7 Braciere | Lvl. 13 Ferrartigli | Lvl. 20 Muro di Fumo | Lvl. 27 Visotruce | Lvl. 34 Lanciafiamme | Lvl. 36 Attacco d’Ala | Lvl. 44 Lacerazione | Lvl. 54 Ira di Drago | Lvl. 64 Turbofuoco",
+    "mosse_tm": "Megapugno (Tutor) | Danzaspada (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Incendio (Tutor) | Taglio | Volo | Boato | Lanciafiamme | Iper Raggio | Forza | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Alacciaio | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Vampata | Aeroassalto | Dragartigli"
+  },
+  {
+    "id": 7,
+    "nome": "Squirtle",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 4 Colpocoda | Lvl. 7 Bolla | Lvl. 10 Ritirata | Lvl. 13 Pistolacqua | Lvl. 18 Morso | Lvl. 23 Rapigiro | Lvl. 28 Protezione | Lvl. 33 Pioggiadanza | Lvl. 40 Capocciata | Lvl. 47 Idropompa",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Forza | Fossa | Tossina | Doppioteam | Cascata | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Centripugno | Breccia | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 8,
+    "nome": "Wartortle",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Colpocoda | Lvl. 1 Bolla | Lvl. 4 Colpocoda | Lvl. 7 Bolla | Lvl. 10 Ritirata | Lvl. 13 Pistolacqua | Lvl. 19 Morso | Lvl. 25 Rapigiro | Lvl. 31 Protezione | Lvl. 37 Pioggiadanza | Lvl. 45 Capocciata | Lvl. 53 Idropompa",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Forza | Fossa | Tossina | Doppioteam | Cascata | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Centripugno | Breccia | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 9,
+    "nome": "Blastoise",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Colpocoda | Lvl. 1 Ritirata | Lvl. 1 Bolla | Lvl. 4 Colpocoda | Lvl. 7 Bolla | Lvl. 10 Ritirata | Lvl. 13 Pistolacqua | Lvl. 19 Morso | Lvl. 25 Rapigiro | Lvl. 31 Protezione | Lvl. 42 Pioggiadanza | Lvl. 55 Capocciata | Lvl. 68 Idropompa",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Idrocannone (Tutor) | Boato | Surf | Geloraggio | Bora | Iper Raggio | Forza | Terremoto | Fossa | Tossina | Doppioteam | Cascata | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Centripugno | Breccia | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 10,
+    "nome": "Caterpie",
+    "tipi": [
+      "Coleottero"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Millebave",
+    "mosse_tm": "-"
+  },
+  {
+    "id": 11,
+    "nome": "Metapod",
+    "tipi": [
+      "Coleottero"
+    ],
+    "mosse_lvl": "Lvl. 1 Rafforzatore | Lvl. 7 Rafforzatore",
+    "mosse_tm": "-"
+  },
+  {
+    "id": 12,
+    "nome": "Butterfree",
+    "tipi": [
+      "Coleottero",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Confusione | Lvl. 10 Confusione | Lvl. 13 Velenpolvere | Lvl. 14 Paralizzante | Lvl. 15 Sonnifero | Lvl. 18 Supersuono | Lvl. 23 Turbine | Lvl. 28 Raffica | Lvl. 34 Psicoraggio | Lvl. 40 Salvaguardia | Lvl. 47 Ventargenteo",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Iper Raggio | Solarraggio | Tossina | Psichico | Doppioteam | Flash | Riposo | Furto | Protezione | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Salvaguardia | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Facciata | Baratto | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 13,
+    "nome": "Weedle",
+    "tipi": [
+      "Coleottero",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Velenospina | Lvl. 1 Millebave",
+    "mosse_tm": "-"
+  },
+  {
+    "id": 14,
+    "nome": "Kakuna",
+    "tipi": [
+      "Coleottero",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Rafforzatore | Lvl. 7 Rafforzatore",
+    "mosse_tm": "-"
+  },
+  {
+    "id": 15,
+    "nome": "Beedrill",
+    "tipi": [
+      "Coleottero",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Furia | Lvl. 10 Furia | Lvl. 15 Focalenergia | Lvl. 20 Doppio Ago | Lvl. 25 Ira | Lvl. 30 Inseguimento | Lvl. 35 Missilspillo | Lvl. 40 Agilità | Lvl. 45 Rimonta",
+    "mosse_tm": "Danzaspada (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Iper Raggio | Solarraggio | Tossina | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Spaccaroccia | Facciata | Breccia | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 16,
+    "nome": "Pidgey",
+    "tipi": [
+      "Normale",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 5 Turbosabbia | Lvl. 9 Raffica | Lvl. 13 Attacco Rapido | Lvl. 19 Turbine | Lvl. 25 Attacco d’Ala | Lvl. 31 Danzadipiume | Lvl. 39 Agilità | Lvl. 47 Speculmossa",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Volo | Tossina | Doppioteam | Riposo | Furto | Protezione | Alacciaio | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Facciata | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 17,
+    "nome": "Pidgeotto",
+    "tipi": [
+      "Normale",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Raffica | Lvl. 1 Turbosabbia | Lvl. 1 Azione | Lvl. 5 Turbosabbia | Lvl. 9 Raffica | Lvl. 13 Attacco Rapido | Lvl. 20 Turbine | Lvl. 27 Attacco d’Ala | Lvl. 34 Danzadipiume | Lvl. 43 Agilità | Lvl. 52 Speculmossa",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Volo | Tossina | Doppioteam | Riposo | Furto | Protezione | Alacciaio | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Facciata | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 18,
+    "nome": "Pidgeot",
+    "tipi": [
+      "Normale",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Raffica | Lvl. 1 Turbosabbia | Lvl. 1 Azione | Lvl. 1 Attacco Rapido | Lvl. 5 Turbosabbia | Lvl. 9 Raffica | Lvl. 13 Attacco Rapido | Lvl. 20 Turbine | Lvl. 27 Attacco d’Ala | Lvl. 34 Danzadipiume | Lvl. 48 Agilità | Lvl. 62 Speculmossa",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Volo | Iper Raggio | Tossina | Doppioteam | Riposo | Furto | Protezione | Alacciaio | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Facciata | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 19,
+    "nome": "Rattata",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Colpocoda | Lvl. 7 Attacco Rapido | Lvl. 13 Iperzanna | Lvl. 20 Focalenergia | Lvl. 27 Inseguimento | Lvl. 34 Superzanna | Lvl. 41 Rimonta",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Geloraggio | Bora | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Spaccaroccia | Facciata | Provocazione | Forzasegreta | Ondashock"
+  },
+  {
+    "id": 20,
+    "nome": "Raticate",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Colpocoda | Lvl. 1 Attacco Rapido | Lvl. 7 Attacco Rapido | Lvl. 13 Iperzanna | Lvl. 20 Visotruce | Lvl. 30 Inseguimento | Lvl. 40 Superzanna | Lvl. 50 Rimonta",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Boato | Geloraggio | Bora | Iper Raggio | Forza | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Spaccaroccia | Facciata | Provocazione | Forzasegreta | Ondashock"
+  },
+  {
+    "id": 21,
+    "nome": "Spearow",
+    "tipi": [
+      "Normale",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Ruggito | Lvl. 1 Beccata | Lvl. 7 Fulmisguardo | Lvl. 13 Furia | Lvl. 19 Inseguimento | Lvl. 25 Aeroassalto | Lvl. 31 Speculmossa | Lvl. 37 Perforbecco | Lvl. 43 Agilità",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Volo | Tossina | Doppioteam | Riposo | Furto | Protezione | Alacciaio | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Facciata | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 22,
+    "nome": "Fearow",
+    "tipi": [
+      "Normale",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Furia | Lvl. 1 Fulmisguardo | Lvl. 1 Ruggito | Lvl. 1 Beccata | Lvl. 7 Fulmisguardo | Lvl. 13 Furia | Lvl. 26 Inseguimento | Lvl. 32 Speculmossa | Lvl. 40 Perforbecco | Lvl. 47 Agilità",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Volo | Iper Raggio | Tossina | Doppioteam | Riposo | Furto | Protezione | Alacciaio | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Facciata | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 23,
+    "nome": "Ekans",
+    "tipi": [
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Avvolgibotta | Lvl. 1 Fulmisguardo | Lvl. 8 Velenospina | Lvl. 13 Morso | Lvl. 20 Sguardo Feroce | Lvl. 25 Stridio | Lvl. 32 Acido | Lvl. 37 Accumulo | Lvl. 37 Sfoghenergia | Lvl. 37 Introenergia | Lvl. 44 Nube",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Forza | Terremoto | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Attaccalite | Facciata | Scippo | Forzasegreta"
+  },
+  {
+    "id": 24,
+    "nome": "Arbok",
+    "tipi": [
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Avvolgibotta | Lvl. 1 Velenospina | Lvl. 1 Fulmisguardo | Lvl. 1 Morso | Lvl. 8 Velenospina | Lvl. 13 Morso | Lvl. 20 Sguardo Feroce | Lvl. 28 Stridio | Lvl. 38 Acido | Lvl. 46 Accumulo | Lvl. 46 Sfoghenergia | Lvl. 46 Introenergia | Lvl. 56 Nube",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Iper Raggio | Forza | Terremoto | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Attaccalite | Facciata | Scippo | Forzasegreta"
+  },
+  {
+    "id": 25,
+    "nome": "Pikachu",
+    "tipi": [
+      "Elettro"
+    ],
+    "mosse_lvl": "Lvl. 1 Ruggito | Lvl. 1 Tuonoshock | Lvl. 6 Colpocoda | Lvl. 8 Tuononda | Lvl. 11 Attacco Rapido | Lvl. 15 Doppioteam | Lvl. 20 Schianto | Lvl. 26 Fulmine | Lvl. 33 Agilità | Lvl. 41 Tuono | Lvl. 50 Schermoluce",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Forza | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Schermoluce | Flash | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Ondashock"
+  },
+  {
+    "id": 26,
+    "nome": "Raichu",
+    "tipi": [
+      "Elettro"
+    ],
+    "mosse_lvl": "Lvl. 1 Colpocoda | Lvl. 1 Tuonoshock | Lvl. 1 Fulmine | Lvl. 1 Attacco Rapido",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Iper Raggio | Forza | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Schermoluce | Flash | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Ondashock"
+  },
+  {
+    "id": 27,
+    "nome": "Sandshrew",
+    "tipi": [
+      "Terra"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 6 Ricciolscudo | Lvl. 11 Turbosabbia | Lvl. 17 Velenospina | Lvl. 23 Lacerazione | Lvl. 30 Comete | Lvl. 37 Sfuriate | Lvl. 45 Sabbiotomba | Lvl. 53 Terrempesta",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Forza | Terremoto | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Aeroassalto"
+  },
+  {
+    "id": 28,
+    "nome": "Sandslash",
+    "tipi": [
+      "Terra"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Turbosabbia | Lvl. 1 Ricciolscudo | Lvl. 6 Ricciolscudo | Lvl. 11 Turbosabbia | Lvl. 17 Velenospina | Lvl. 24 Lacerazione | Lvl. 33 Comete | Lvl. 42 Sfuriate | Lvl. 52 Sabbiotomba | Lvl. 62 Terrempesta",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Iper Raggio | Forza | Terremoto | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Aeroassalto"
+  },
+  {
+    "id": 29,
+    "nome": "Nidoran♀",
+    "tipi": [
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Ruggito | Lvl. 8 Colpocoda | Lvl. 12 Doppiocalcio | Lvl. 17 Velenospina | Lvl. 20 Morso | Lvl. 23 Altruismo | Lvl. 30 Sfuriate | Lvl. 38 Adulazione | Lvl. 47 Sgranocchio",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Geloraggio | Bora | Forza | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Aeroassalto | Ondashock | Idropulsar"
+  },
+  {
+    "id": 30,
+    "nome": "Nidorina",
+    "tipi": [
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Ruggito | Lvl. 8 Colpocoda | Lvl. 12 Doppiocalcio | Lvl. 18 Velenospina | Lvl. 22 Morso | Lvl. 26 Altruismo | Lvl. 34 Sfuriate | Lvl. 43 Adulazione | Lvl. 53 Sgranocchio",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Geloraggio | Bora | Forza | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Aeroassalto | Ondashock | Idropulsar"
+  },
+  {
+    "id": 31,
+    "nome": "Nidoqueen",
+    "tipi": [
+      "Veleno",
+      "Terra"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Doppiocalcio | Lvl. 1 Colpocoda | Lvl. 1 Velenospina | Lvl. 22 Corposcontro | Lvl. 43 Troppoforte",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Boato | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Forza | Fulmine | Tuono | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Fangobomba | Terrempesta | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Spaccaroccia | Attaccalite | Facciata | Centripugno | Provocazione | Breccia | Forzasegreta | Rocciotomba | Aeroassalto | Ondashock | Idropulsar"
+  },
+  {
+    "id": 32,
+    "nome": "Nidoran♂",
+    "tipi": [
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Fulmisguardo | Lvl. 1 Beccata | Lvl. 8 Focalenergia | Lvl. 12 Doppiocalcio | Lvl. 17 Velenospina | Lvl. 20 Incornata | Lvl. 23 Altruismo | Lvl. 30 Furia | Lvl. 38 Adulazione | Lvl. 47 Perforcorno",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Geloraggio | Bora | Forza | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Ondashock | Idropulsar"
+  },
+  {
+    "id": 33,
+    "nome": "Nidorino",
+    "tipi": [
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Fulmisguardo | Lvl. 1 Beccata | Lvl. 8 Focalenergia | Lvl. 12 Doppiocalcio | Lvl. 18 Velenospina | Lvl. 22 Incornata | Lvl. 26 Altruismo | Lvl. 34 Furia | Lvl. 43 Adulazione | Lvl. 53 Perforcorno",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Geloraggio | Bora | Forza | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Ondashock | Idropulsar"
+  },
+  {
+    "id": 34,
+    "nome": "Nidoking",
+    "tipi": [
+      "Veleno",
+      "Terra"
+    ],
+    "mosse_lvl": "Lvl. 1 Doppiocalcio | Lvl. 1 Velenospina | Lvl. 1 Beccata | Lvl. 1 Focalenergia | Lvl. 22 Colpo | Lvl. 43 Megacorno",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Boato | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Forza | Fulmine | Tuono | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Fangobomba | Terrempesta | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Spaccaroccia | Attaccalite | Facciata | Centripugno | Provocazione | Breccia | Forzasegreta | Rocciotomba | Ondashock | Idropulsar"
+  },
+  {
+    "id": 35,
+    "nome": "Clefairy",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Botta | Lvl. 1 Ruggito | Lvl. 5 Ripeti | Lvl. 9 Canto | Lvl. 13 Doppiasberla | Lvl. 17 Sonoqui | Lvl. 21 Minimizzato | Lvl. 25 Ricciolscudo | Lvl. 29 Metronomo | Lvl. 33 Cosmoforza | Lvl. 37 Lucelunare | Lvl. 41 Schermoluce | Lvl. 45 Meteorpugno",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Covauova (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Lanciafiamme | Geloraggio | Bora | Forza | Solarraggio | Fulmine | Tuono | Fossa | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Fuocobomba | Flash | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Facciata | Centripugno | Breccia | Scippo | Forzasegreta | Calmamente | Ondashock | Idropulsar"
+  },
+  {
+    "id": 36,
+    "nome": "Clefable",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Doppiasberla | Lvl. 1 Canto | Lvl. 1 Minimizzato | Lvl. 1 Metronomo",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Covauova (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Lanciafiamme | Geloraggio | Bora | Iper Raggio | Forza | Solarraggio | Fulmine | Tuono | Fossa | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Fuocobomba | Flash | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Facciata | Centripugno | Breccia | Scippo | Forzasegreta | Calmamente | Ondashock | Idropulsar"
+  },
+  {
+    "id": 37,
+    "nome": "Vulpix",
+    "tipi": [
+      "Fuoco"
+    ],
+    "mosse_lvl": "Lvl. 1 Braciere | Lvl. 5 Colpocoda | Lvl. 9 Boato | Lvl. 13 Attacco Rapido | Lvl. 17 Fuocofatuo | Lvl. 21 Stordiraggio | Lvl. 25 Esclusiva | Lvl. 29 Lanciafiamme | Lvl. 33 Salvaguardia | Lvl. 37 Rancore | Lvl. 41 Turbofuoco",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Boato | Lanciafiamme | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Giornodisole | Facciata | Forzasegreta | Vampata"
+  },
+  {
+    "id": 38,
+    "nome": "Ninetales",
+    "tipi": [
+      "Fuoco"
+    ],
+    "mosse_lvl": "Lvl. 1 Braciere | Lvl. 1 Attacco Rapido | Lvl. 1 Stordiraggio | Lvl. 1 Salvaguardia | Lvl. 45 Turbofuoco",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Boato | Lanciafiamme | Iper Raggio | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Giornodisole | Facciata | Forzasegreta | Vampata"
+  },
+  {
+    "id": 39,
+    "nome": "Jigglypuff",
+    "tipi": [
+      "Normale",
+      "Folletto"
+    ],
+    "mosse_lvl": "Lvl. 1 Canto | Lvl. 4 Ricciolscudo | Lvl. 9 Botta | Lvl. 14 Inibitore | Lvl. 19 Rotolamento | Lvl. 24 Doppiasberla | Lvl. 29 Riposo | Lvl. 34 Corposcontro | Lvl. 39 Mimica | Lvl. 44 Granvoce | Lvl. 49 Sdoppiatore",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Lanciafiamme | Geloraggio | Bora | Forza | Solarraggio | Fulmine | Tuono | Fossa | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Fuocobomba | Flash | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Facciata | Centripugno | Breccia | Scippo | Forzasegreta | Ondashock | Idropulsar"
+  },
+  {
+    "id": 40,
+    "nome": "Wigglytuff",
+    "tipi": [
+      "Normale",
+      "Folletto"
+    ],
+    "mosse_lvl": "Lvl. 1 Doppiasberla | Lvl. 1 Canto | Lvl. 1 Inibitore | Lvl. 1 Ricciolscudo",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Lanciafiamme | Geloraggio | Bora | Iper Raggio | Forza | Solarraggio | Fulmine | Tuono | Fossa | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Fuocobomba | Flash | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Facciata | Centripugno | Breccia | Scippo | Forzasegreta | Ondashock | Idropulsar"
+  },
+  {
+    "id": 41,
+    "nome": "Zubat",
+    "tipi": [
+      "Veleno",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Sanguisuga | Lvl. 6 Sgomento | Lvl. 11 Supersuono | Lvl. 16 Morso | Lvl. 21 Attacco d’Ala | Lvl. 26 Stordiraggio | Lvl. 31 Aerasoio | Lvl. 36 Malosguardo | Lvl. 41 Velenodenti | Lvl. 46 Nube",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Tossina | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Alacciaio | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Provocazione | Scippo | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 42,
+    "nome": "Golbat",
+    "tipi": [
+      "Veleno",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Supersuono | Lvl. 1 Stridio | Lvl. 1 Sanguisuga | Lvl. 1 Sgomento | Lvl. 6 Sgomento | Lvl. 11 Supersuono | Lvl. 16 Morso | Lvl. 21 Attacco d’Ala | Lvl. 28 Stordiraggio | Lvl. 35 Aerasoio | Lvl. 42 Malosguardo | Lvl. 49 Velenodenti | Lvl. 56 Nube",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Iper Raggio | Tossina | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Alacciaio | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Provocazione | Scippo | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 43,
+    "nome": "Oddish",
+    "tipi": [
+      "Erba",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Assorbimento | Lvl. 7 Profumino | Lvl. 14 Velenpolvere | Lvl. 16 Paralizzante | Lvl. 18 Sonnifero | Lvl. 23 Acido | Lvl. 32 Lucelunare | Lvl. 39 Petalodanza",
+    "mosse_tm": "Danzaspada (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Solarraggio | Tossina | Doppioteam | Flash | Riposo | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Facciata | Forzasegreta | Semitraglia"
+  },
+  {
+    "id": 44,
+    "nome": "Gloom",
+    "tipi": [
+      "Erba",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Assorbimento | Lvl. 1 Velenpolvere | Lvl. 1 Profumino | Lvl. 7 Profumino | Lvl. 14 Velenpolvere | Lvl. 16 Paralizzante | Lvl. 18 Sonnifero | Lvl. 24 Acido | Lvl. 35 Lucelunare | Lvl. 44 Petalodanza",
+    "mosse_tm": "Danzaspada (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Solarraggio | Tossina | Doppioteam | Flash | Riposo | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Facciata | Forzasegreta | Semitraglia"
+  },
+  {
+    "id": 45,
+    "nome": "Vileplume",
+    "tipi": [
+      "Erba",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Assorbimento | Lvl. 1 Megassorbimento | Lvl. 1 Paralizzante | Lvl. 1 Aromaterapia | Lvl. 44 Petalodanza",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Iper Raggio | Solarraggio | Tossina | Doppioteam | Flash | Riposo | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Facciata | Forzasegreta | Semitraglia"
+  },
+  {
+    "id": 46,
+    "nome": "Paras",
+    "tipi": [
+      "Coleottero",
+      "Erba"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 7 Paralizzante | Lvl. 13 Velenpolvere | Lvl. 19 Sanguisuga | Lvl. 25 Spora | Lvl. 31 Lacerazione | Lvl. 37 Crescita | Lvl. 43 Gigassorbimento | Lvl. 49 Aromaterapia",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Solarraggio | Fossa | Tossina | Doppioteam | Flash | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Semitraglia | Aeroassalto"
+  },
+  {
+    "id": 47,
+    "nome": "Parasect",
+    "tipi": [
+      "Coleottero",
+      "Erba"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Velenpolvere | Lvl. 1 Paralizzante | Lvl. 7 Paralizzante | Lvl. 13 Velenpolvere | Lvl. 19 Sanguisuga | Lvl. 27 Spora | Lvl. 35 Lacerazione | Lvl. 43 Crescita | Lvl. 51 Gigassorbimento | Lvl. 59 Aromaterapia",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Iper Raggio | Solarraggio | Fossa | Tossina | Doppioteam | Flash | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Semitraglia | Aeroassalto"
+  },
+  {
+    "id": 48,
+    "nome": "Venonat",
+    "tipi": [
+      "Coleottero",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Inibitore | Lvl. 1 Preveggenza | Lvl. 9 Supersuono | Lvl. 17 Confusione | Lvl. 20 Velenpolvere | Lvl. 25 Sanguisuga | Lvl. 28 Paralizzante | Lvl. 33 Psicoraggio | Lvl. 36 Sonnifero | Lvl. 41 Psichico",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Solarraggio | Tossina | Psichico | Doppioteam | Flash | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Facciata | Baratto | Forzasegreta"
+  },
+  {
+    "id": 49,
+    "nome": "Venomoth",
+    "tipi": [
+      "Coleottero",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Supersuono | Lvl. 1 Inibitore | Lvl. 1 Preveggenza | Lvl. 1 Ventargenteo | Lvl. 9 Supersuono | Lvl. 17 Confusione | Lvl. 20 Velenpolvere | Lvl. 25 Sanguisuga | Lvl. 28 Paralizzante | Lvl. 31 Raffica | Lvl. 36 Psicoraggio | Lvl. 42 Sonnifero | Lvl. 52 Psichico",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Iper Raggio | Solarraggio | Tossina | Psichico | Doppioteam | Flash | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Facciata | Baratto | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 50,
+    "nome": "Diglett",
+    "tipi": [
+      "Terra"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Turbosabbia | Lvl. 5 Ruggito | Lvl. 9 Magnitudo | Lvl. 17 Fossa | Lvl. 21 Sfuriate | Lvl. 25 Fangosberla | Lvl. 33 Lacerazione | Lvl. 41 Terremoto | Lvl. 49 Abisso",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Terremoto | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Rocciotomba | Aeroassalto"
+  },
+  {
+    "id": 51,
+    "nome": "Dugtrio",
+    "tipi": [
+      "Terra"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Turbosabbia | Lvl. 1 Ruggito | Lvl. 1 Tripletta | Lvl. 5 Ruggito | Lvl. 9 Magnitudo | Lvl. 17 Fossa | Lvl. 21 Sfuriate | Lvl. 25 Fangosberla | Lvl. 26 Sabbiotomba | Lvl. 38 Lacerazione | Lvl. 51 Terremoto | Lvl. 64 Abisso",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Iper Raggio | Terremoto | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Rocciotomba | Aeroassalto"
+  },
+  {
+    "id": 52,
+    "nome": "Meowth",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Ruggito | Lvl. 10 Morso | Lvl. 18 Giornopaga | Lvl. 25 Finta | Lvl. 31 Stridio | Lvl. 36 Sfuriate | Lvl. 40 Lacerazione | Lvl. 43 Bruciapelo | Lvl. 45 Bullo",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Taglio | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Flash | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Provocazione | Scippo | Forzasegreta | Aeroassalto | Ondashock | Idropulsar"
+  },
+  {
+    "id": 53,
+    "nome": "Persian",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Morso | Lvl. 1 Ruggito | Lvl. 10 Morso | Lvl. 18 Giornopaga | Lvl. 25 Finta | Lvl. 34 Stridio | Lvl. 42 Sfuriate | Lvl. 49 Lacerazione | Lvl. 55 Bruciapelo | Lvl. 61 Bullo",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Taglio | Boato | Iper Raggio | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Flash | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Provocazione | Scippo | Forzasegreta | Aeroassalto | Ondashock | Idropulsar"
+  },
+  {
+    "id": 54,
+    "nome": "Psyduck",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Docciascudo | Lvl. 5 Colpocoda | Lvl. 10 Inibitore | Lvl. 16 Confusione | Lvl. 23 Stridio | Lvl. 31 Psicamisù | Lvl. 40 Sfuriate | Lvl. 50 Idropompa",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Forza | Fossa | Tossina | Doppioteam | Cascata | Flash | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Centripugno | Breccia | Forzasegreta | Sub | Aeroassalto | Calmamente | Idropulsar"
+  },
+  {
+    "id": 55,
+    "nome": "Golduck",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Colpocoda | Lvl. 1 Inibitore | Lvl. 1 Docciascudo | Lvl. 5 Colpocoda | Lvl. 10 Inibitore | Lvl. 16 Confusione | Lvl. 23 Stridio | Lvl. 31 Psicamisù | Lvl. 44 Sfuriate | Lvl. 58 Idropompa",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Iper Raggio | Forza | Fossa | Tossina | Doppioteam | Cascata | Flash | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Centripugno | Breccia | Forzasegreta | Sub | Aeroassalto | Calmamente | Idropulsar"
+  },
+  {
+    "id": 56,
+    "nome": "Mankey",
+    "tipi": [
+      "Lotta"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Fulmisguardo | Lvl. 6 Colpo Basso | Lvl. 11 Colpokarate | Lvl. 16 Sfuriate | Lvl. 21 Focalenergia | Lvl. 26 Movim. Sismico | Lvl. 31 Incrocolpo | Lvl. 36 Bullo | Lvl. 41 Stridio | Lvl. 46 Colpo",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Forza | Fulmine | Tuono | Terremoto | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Provocazione | Breccia | Forzasegreta | Vampata | Rocciotomba | Aeroassalto | Granfisico"
+  },
+  {
+    "id": 57,
+    "nome": "Primeape",
+    "tipi": [
+      "Lotta"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Fulmisguardo | Lvl. 1 Colpo Basso | Lvl. 1 Ira | Lvl. 6 Colpo Basso | Lvl. 11 Colpokarate | Lvl. 16 Sfuriate | Lvl. 21 Focalenergia | Lvl. 26 Movim. Sismico | Lvl. 28 Ira | Lvl. 35 Incrocolpo | Lvl. 44 Bullo | Lvl. 53 Stridio | Lvl. 62 Colpo",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Iper Raggio | Forza | Fulmine | Tuono | Terremoto | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Provocazione | Breccia | Forzasegreta | Vampata | Rocciotomba | Aeroassalto | Granfisico"
+  },
+  {
+    "id": 58,
+    "nome": "Growlithe",
+    "tipi": [
+      "Fuoco"
+    ],
+    "mosse_lvl": "Lvl. 1 Morso | Lvl. 1 Boato | Lvl. 7 Braciere | Lvl. 13 Fulmisguardo | Lvl. 19 Segugio | Lvl. 25 Riduttore | Lvl. 31 Ruotafuoco | Lvl. 37 Altruismo | Lvl. 43 Agilità | Lvl. 49 Lanciafiamme",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Boato | Lanciafiamme | Forza | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Vampata | Aeroassalto"
+  },
+  {
+    "id": 59,
+    "nome": "Arcanine",
+    "tipi": [
+      "Fuoco"
+    ],
+    "mosse_lvl": "Lvl. 1 Morso | Lvl. 1 Boato | Lvl. 1 Braciere | Lvl. 1 Segugio | Lvl. 49 Extrarapido",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Boato | Lanciafiamme | Iper Raggio | Forza | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Vampata | Aeroassalto"
+  },
+  {
+    "id": 60,
+    "nome": "Poliwag",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Bolla | Lvl. 7 Ipnosi | Lvl. 13 Pistolacqua | Lvl. 19 Doppiasberla | Lvl. 25 Pioggiadanza | Lvl. 31 Corposcontro | Lvl. 37 Panciamburo | Lvl. 43 Idropompa",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Fossa | Tossina | Psichico | Doppioteam | Cascata | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Grandine | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 61,
+    "nome": "Poliwhirl",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Pistolacqua | Lvl. 1 Ipnosi | Lvl. 1 Bolla | Lvl. 7 Ipnosi | Lvl. 13 Pistolacqua | Lvl. 19 Doppiasberla | Lvl. 27 Pioggiadanza | Lvl. 35 Corposcontro | Lvl. 43 Panciamburo | Lvl. 51 Idropompa",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Forza | Terremoto | Fossa | Tossina | Psichico | Doppioteam | Cascata | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Centripugno | Breccia | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 62,
+    "nome": "Poliwrath",
+    "tipi": [
+      "Acqua",
+      "Lotta"
+    ],
+    "mosse_lvl": "Lvl. 1 Doppiasberla | Lvl. 1 Pistolacqua | Lvl. 1 Sottomissione | Lvl. 1 Ipnosi | Lvl. 35 Sottomissione | Lvl. 51 Leggimente",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Iper Raggio | Forza | Terremoto | Fossa | Tossina | Psichico | Doppioteam | Cascata | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Centripugno | Breccia | Forzasegreta | Sub | Rocciotomba | Granfisico | Idropulsar"
+  },
+  {
+    "id": 63,
+    "nome": "Abra",
+    "tipi": [
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Teletrasporto",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Flash | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Centripugno | Provocazione | Baratto | Scippo | Forzasegreta | Calmamente | Ondashock"
+  },
+  {
+    "id": 64,
+    "nome": "Kadabra",
+    "tipi": [
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Confusione | Lvl. 1 Teletrasporto | Lvl. 1 Cinèsi | Lvl. 16 Confusione | Lvl. 18 Inibitore | Lvl. 21 Psicoraggio | Lvl. 23 Riflesso | Lvl. 25 Ripresa | Lvl. 30 Divinazione | Lvl. 33 Giocodiruolo | Lvl. 36 Psichico | Lvl. 43 Raggiro",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Flash | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Centripugno | Provocazione | Baratto | Scippo | Forzasegreta | Calmamente | Ondashock"
+  },
+  {
+    "id": 65,
+    "nome": "Alakazam",
+    "tipi": [
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Confusione | Lvl. 1 Teletrasporto | Lvl. 1 Cinèsi | Lvl. 16 Confusione | Lvl. 18 Inibitore | Lvl. 21 Psicoraggio | Lvl. 23 Riflesso | Lvl. 25 Ripresa | Lvl. 30 Divinazione | Lvl. 33 Calmamente | Lvl. 36 Psichico | Lvl. 43 Raggiro",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Iper Raggio | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Flash | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Centripugno | Provocazione | Baratto | Scippo | Forzasegreta | Calmamente | Ondashock"
+  },
+  {
+    "id": 66,
+    "nome": "Machop",
+    "tipi": [
+      "Lotta"
+    ],
+    "mosse_lvl": "Lvl. 1 Fulmisguardo | Lvl. 1 Colpo Basso | Lvl. 7 Focalenergia | Lvl. 13 Colpokarate | Lvl. 19 Movim. Sismico | Lvl. 22 Preveggenza | Lvl. 25 Vendetta | Lvl. 31 Vitaltiro | Lvl. 37 Sottomissione | Lvl. 40 Incrocolpo | Lvl. 43 Visotruce | Lvl. 49 Dinamipugno",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Lanciafiamme | Forza | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Granfisico"
+  },
+  {
+    "id": 67,
+    "nome": "Machoke",
+    "tipi": [
+      "Lotta"
+    ],
+    "mosse_lvl": "Lvl. 1 Fulmisguardo | Lvl. 1 Colpo Basso | Lvl. 1 Focalenergia | Lvl. 7 Focalenergia | Lvl. 13 Colpokarate | Lvl. 19 Movim. Sismico | Lvl. 22 Preveggenza | Lvl. 25 Vendetta | Lvl. 33 Vitaltiro | Lvl. 41 Sottomissione | Lvl. 46 Incrocolpo | Lvl. 51 Visotruce | Lvl. 59 Dinamipugno",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Lanciafiamme | Forza | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Granfisico"
+  },
+  {
+    "id": 68,
+    "nome": "Machamp",
+    "tipi": [
+      "Lotta"
+    ],
+    "mosse_lvl": "Lvl. 1 Fulmisguardo | Lvl. 1 Colpo Basso | Lvl. 1 Focalenergia | Lvl. 7 Focalenergia | Lvl. 13 Colpokarate | Lvl. 19 Movim. Sismico | Lvl. 22 Preveggenza | Lvl. 25 Vendetta | Lvl. 33 Vitaltiro | Lvl. 41 Sottomissione | Lvl. 46 Incrocolpo | Lvl. 51 Visotruce | Lvl. 59 Dinamipugno",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Lanciafiamme | Iper Raggio | Forza | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Granfisico"
+  },
+  {
+    "id": 69,
+    "nome": "Bellsprout",
+    "tipi": [
+      "Erba",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Frustata | Lvl. 6 Crescita | Lvl. 11 Avvolgibotta | Lvl. 15 Sonnifero | Lvl. 17 Velenpolvere | Lvl. 19 Paralizzante | Lvl. 23 Acido | Lvl. 30 Profumino | Lvl. 37 Foglielama | Lvl. 45 Schianto",
+    "mosse_tm": "Danzaspada (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Solarraggio | Tossina | Doppioteam | Flash | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Facciata | Forzasegreta | Semitraglia"
+  },
+  {
+    "id": 70,
+    "nome": "Weepinbell",
+    "tipi": [
+      "Erba",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Frustata | Lvl. 1 Avvolgibotta | Lvl. 1 Crescita | Lvl. 6 Crescita | Lvl. 11 Avvolgibotta | Lvl. 15 Sonnifero | Lvl. 17 Velenpolvere | Lvl. 19 Paralizzante | Lvl. 24 Acido | Lvl. 33 Profumino | Lvl. 42 Foglielama | Lvl. 54 Schianto",
+    "mosse_tm": "Danzaspada (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Solarraggio | Tossina | Doppioteam | Flash | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Facciata | Forzasegreta | Semitraglia"
+  },
+  {
+    "id": 71,
+    "nome": "Victreebel",
+    "tipi": [
+      "Erba",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Frustata | Lvl. 1 Foglielama | Lvl. 1 Sonnifero | Lvl. 1 Profumino | Lvl. 1 Accumulo | Lvl. 1 Sfoghenergia | Lvl. 1 Introenergia",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Iper Raggio | Solarraggio | Tossina | Doppioteam | Flash | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Facciata | Forzasegreta | Semitraglia"
+  },
+  {
+    "id": 72,
+    "nome": "Tentacool",
+    "tipi": [
+      "Acqua",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Velenospina | Lvl. 6 Supersuono | Lvl. 12 Limitazione | Lvl. 19 Acido | Lvl. 25 Bollaraggio | Lvl. 30 Avvolgibotta | Lvl. 36 Barriera | Lvl. 43 Stridio | Lvl. 49 Idropompa",
+    "mosse_tm": "Danzaspada (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Surf | Geloraggio | Bora | Tossina | Doppioteam | Cascata | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Grandine | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 73,
+    "nome": "Tentacruel",
+    "tipi": [
+      "Acqua",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Velenospina | Lvl. 1 Supersuono | Lvl. 1 Limitazione | Lvl. 6 Supersuono | Lvl. 12 Limitazione | Lvl. 19 Acido | Lvl. 25 Bollaraggio | Lvl. 30 Avvolgibotta | Lvl. 38 Barriera | Lvl. 47 Stridio | Lvl. 55 Idropompa",
+    "mosse_tm": "Danzaspada (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Surf | Geloraggio | Bora | Iper Raggio | Tossina | Doppioteam | Cascata | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Grandine | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 74,
+    "nome": "Geodude",
+    "tipi": [
+      "Roccia",
+      "Terra"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Ricciolscudo | Lvl. 6 Fangata | Lvl. 11 Sassata | Lvl. 16 Magnitudo | Lvl. 21 Autodistruzione | Lvl. 26 Rotolamento | Lvl. 31 Cadutamassi | Lvl. 36 Terremoto | Lvl. 41 Esplosione | Lvl. 46 Sdoppiatore",
+    "mosse_tm": "Megapugno (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Esplosione (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Lanciafiamme | Forza | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba"
+  },
+  {
+    "id": 75,
+    "nome": "Graveler",
+    "tipi": [
+      "Roccia",
+      "Terra"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Sassata | Lvl. 1 Ricciolscudo | Lvl. 1 Fangata | Lvl. 6 Fangata | Lvl. 11 Sassata | Lvl. 16 Magnitudo | Lvl. 21 Autodistruzione | Lvl. 29 Rotolamento | Lvl. 37 Cadutamassi | Lvl. 45 Terremoto | Lvl. 53 Esplosione | Lvl. 62 Sdoppiatore",
+    "mosse_tm": "Megapugno (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Esplosione (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Lanciafiamme | Forza | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba"
+  },
+  {
+    "id": 76,
+    "nome": "Golem",
+    "tipi": [
+      "Roccia",
+      "Terra"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Sassata | Lvl. 1 Ricciolscudo | Lvl. 1 Fangata | Lvl. 6 Fangata | Lvl. 11 Sassata | Lvl. 16 Magnitudo | Lvl. 21 Autodistruzione | Lvl. 29 Rotolamento | Lvl. 37 Cadutamassi | Lvl. 45 Terremoto | Lvl. 53 Esplosione | Lvl. 62 Sdoppiatore",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Esplosione (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Boato | Lanciafiamme | Iper Raggio | Forza | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba"
+  },
+  {
+    "id": 77,
+    "nome": "Ponyta",
+    "tipi": [
+      "Fuoco"
+    ],
+    "mosse_lvl": "Lvl. 1 Attacco Rapido | Lvl. 5 Ruggito | Lvl. 9 Colpocoda | Lvl. 14 Braciere | Lvl. 19 Pestone | Lvl. 25 Turbofuoco | Lvl. 31 Riduttore | Lvl. 38 Agilità | Lvl. 45 Rimbalzo | Lvl. 53 Fuocobomba",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Lanciafiamme | Forza | Solarraggio | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Facciata | Forzasegreta | Vampata"
+  },
+  {
+    "id": 78,
+    "nome": "Rapidash",
+    "tipi": [
+      "Fuoco"
+    ],
+    "mosse_lvl": "Lvl. 1 Colpocoda | Lvl. 1 Ruggito | Lvl. 1 Braciere | Lvl. 1 Attacco Rapido | Lvl. 5 Ruggito | Lvl. 9 Colpocoda | Lvl. 14 Braciere | Lvl. 19 Pestone | Lvl. 25 Turbofuoco | Lvl. 31 Riduttore | Lvl. 38 Agilità | Lvl. 40 Furia | Lvl. 50 Rimbalzo | Lvl. 63 Fuocobomba",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Lanciafiamme | Iper Raggio | Forza | Solarraggio | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Facciata | Forzasegreta | Vampata"
+  },
+  {
+    "id": 79,
+    "nome": "Slowpoke",
+    "tipi": [
+      "Acqua",
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Maledizione | Lvl. 1 Sbadiglio | Lvl. 6 Ruggito | Lvl. 13 Pistolacqua | Lvl. 17 Confusione | Lvl. 24 Inibitore | Lvl. 29 Bottintesta | Lvl. 36 Amnesia | Lvl. 40 Psichico | Lvl. 47 Psicamisù",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Lanciafiamme | Surf | Geloraggio | Bora | Forza | Terremoto | Fossa | Tossina | Psichico | Doppioteam | Fuocobomba | Flash | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Grandine | Facciata | Baratto | Forzasegreta | Sub | Calmamente | Idropulsar"
+  },
+  {
+    "id": 80,
+    "nome": "Slowbro",
+    "tipi": [
+      "Acqua",
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Ruggito | Lvl. 1 Maledizione | Lvl. 1 Sbadiglio | Lvl. 6 Ruggito | Lvl. 13 Pistolacqua | Lvl. 17 Confusione | Lvl. 24 Inibitore | Lvl. 29 Bottintesta | Lvl. 36 Amnesia | Lvl. 37 Ritirata | Lvl. 44 Psichico | Lvl. 55 Psicamisù",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Forza | Terremoto | Fossa | Tossina | Psichico | Doppioteam | Fuocobomba | Flash | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Spaccaroccia | Grandine | Facciata | Centripugno | Breccia | Baratto | Forzasegreta | Sub | Calmamente | Idropulsar"
+  },
+  {
+    "id": 81,
+    "nome": "Magnemite",
+    "tipi": [
+      "Elettro",
+      "Acciaio"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Ferrostrido | Lvl. 6 Tuonoshock | Lvl. 11 Supersuono | Lvl. 16 Sonicboom | Lvl. 21 Tuononda | Lvl. 26 Scintilla | Lvl. 32 Localizza | Lvl. 38 Comete | Lvl. 44 Stridio | Lvl. 50 Falcecannone",
+    "mosse_tm": "Sdoppiatore (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Fulmine | Tuono | Tossina | Doppioteam | Riflesso | Flash | Riposo | Protezione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Facciata | Forzasegreta | Ondashock"
+  },
+  {
+    "id": 82,
+    "nome": "Magneton",
+    "tipi": [
+      "Elettro",
+      "Acciaio"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Supersuono | Lvl. 1 Tuonoshock | Lvl. 1 Ferrostrido | Lvl. 6 Tuonoshock | Lvl. 11 Supersuono | Lvl. 16 Sonicboom | Lvl. 21 Tuononda | Lvl. 26 Scintilla | Lvl. 35 Localizza | Lvl. 44 Tripletta | Lvl. 53 Stridio | Lvl. 62 Falcecannone",
+    "mosse_tm": "Sdoppiatore (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Iper Raggio | Fulmine | Tuono | Tossina | Doppioteam | Riflesso | Flash | Riposo | Protezione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Facciata | Forzasegreta | Ondashock"
+  },
+  {
+    "id": 83,
+    "nome": "Farfetch’d",
+    "tipi": [
+      "Normale",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Beccata | Lvl. 6 Turbosabbia | Lvl. 11 Fulmisguardo | Lvl. 16 Furia | Lvl. 21 Privazione | Lvl. 26 Tagliofuria | Lvl. 31 Danzaspada | Lvl. 36 Agilità | Lvl. 41 Lacerazione | Lvl. 46 Falsofinale",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Volo | Tossina | Doppioteam | Riposo | Furto | Protezione | Alacciaio | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Facciata | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 84,
+    "nome": "Doduo",
+    "tipi": [
+      "Normale",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Ruggito | Lvl. 1 Beccata | Lvl. 9 Inseguimento | Lvl. 13 Furia | Lvl. 21 Tripletta | Lvl. 25 Ira | Lvl. 33 Baraonda | Lvl. 37 Perforbecco | Lvl. 45 Agilità",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Volo | Tossina | Doppioteam | Riposo | Furto | Protezione | Alacciaio | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Facciata | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 85,
+    "nome": "Dodrio",
+    "tipi": [
+      "Normale",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Furia | Lvl. 1 Ruggito | Lvl. 1 Beccata | Lvl. 1 Inseguimento | Lvl. 9 Inseguimento | Lvl. 13 Furia | Lvl. 21 Tripletta | Lvl. 25 Ira | Lvl. 38 Baraonda | Lvl. 47 Perforbecco | Lvl. 60 Agilità",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Volo | Iper Raggio | Tossina | Doppioteam | Riposo | Furto | Protezione | Alacciaio | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Attaccalite | Facciata | Provocazione | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 86,
+    "nome": "Seel",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Bottintesta | Lvl. 9 Ruggito | Lvl. 17 Ventogelato | Lvl. 21 Raggiaurora | Lvl. 29 Riposo | Lvl. 37 Riduttore | Lvl. 41 Geloraggio | Lvl. 49 Salvaguardia",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Tossina | Doppioteam | Cascata | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Introforza | Pioggiadanza | Grandine | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 87,
+    "nome": "Dewgong",
+    "tipi": [
+      "Acqua",
+      "Ghiaccio"
+    ],
+    "mosse_lvl": "Lvl. 1 Bottintesta | Lvl. 1 Ruggito | Lvl. 1 Raggiaurora | Lvl. 1 Ventogelato | Lvl. 1 Segnoraggio | Lvl. 9 Ruggito | Lvl. 17 Ventogelato | Lvl. 21 Raggiaurora | Lvl. 29 Riposo | Lvl. 34 Purogelo | Lvl. 42 Riduttore | Lvl. 51 Geloraggio | Lvl. 64 Salvaguardia",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Iper Raggio | Tossina | Doppioteam | Cascata | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Introforza | Pioggiadanza | Grandine | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 88,
+    "nome": "Grimer",
+    "tipi": [
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Botta | Lvl. 1 Velenogas | Lvl. 4 Rafforzatore | Lvl. 8 Inibitore | Lvl. 13 Fango | Lvl. 19 Minimizzato | Lvl. 26 Stridio | Lvl. 34 Scudo Acido | Lvl. 43 Fangobomba | Lvl. 53 Memento",
+    "mosse_tm": "Corposcontro (Tutor) | Mimica (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Lanciafiamme | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Attaccalite | Facciata | Provocazione | Forzasegreta | Rocciotomba | Ondashock"
+  },
+  {
+    "id": 89,
+    "nome": "Muk",
+    "tipi": [
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Botta | Lvl. 1 Rafforzatore | Lvl. 1 Velenogas | Lvl. 4 Rafforzatore | Lvl. 8 Inibitore | Lvl. 13 Fango | Lvl. 19 Minimizzato | Lvl. 26 Stridio | Lvl. 34 Scudo Acido | Lvl. 47 Fangobomba | Lvl. 61 Memento",
+    "mosse_tm": "Corposcontro (Tutor) | Mimica (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Lanciafiamme | Iper Raggio | Forza | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Attaccalite | Facciata | Centripugno | Provocazione | Breccia | Forzasegreta | Rocciotomba | Ondashock"
+  },
+  {
+    "id": 90,
+    "nome": "Shellder",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Ritirata | Lvl. 8 Gelolancia | Lvl. 15 Supersuono | Lvl. 22 Raggiaurora | Lvl. 29 Protezione | Lvl. 36 Fulmisguardo | Lvl. 43 Tenaglia | Lvl. 50 Geloraggio",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Tossina | Doppioteam | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Grandine | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 91,
+    "nome": "Cloyster",
+    "tipi": [
+      "Acqua",
+      "Ghiaccio"
+    ],
+    "mosse_lvl": "Lvl. 1 Supersuono | Lvl. 1 Raggiaurora | Lvl. 1 Ritirata | Lvl. 1 Protezione | Lvl. 36 Punte | Lvl. 43 Sparalance",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Iper Raggio | Tossina | Doppioteam | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Grandine | Attaccalite | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 92,
+    "nome": "Gastly",
+    "tipi": [
+      "Spettro",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Ipnosi | Lvl. 1 Leccata | Lvl. 8 Dispetto | Lvl. 13 Maledizione | Lvl. 16 Ombra Notturna | Lvl. 21 Stordiraggio | Lvl. 28 Mangiasogni | Lvl. 33 Destinobbligato | Lvl. 36 Palla Ombra | Lvl. 41 Incubo | Lvl. 48 Malosguardo",
+    "mosse_tm": "Mimica (Tutor) | Mangiasogni (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Fulmine | Tossina | Psichico | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Provocazione | Baratto | Scippo | Forzasegreta"
+  },
+  {
+    "id": 93,
+    "nome": "Haunter",
+    "tipi": [
+      "Spettro",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Ipnosi | Lvl. 1 Leccata | Lvl. 1 Dispetto | Lvl. 8 Dispetto | Lvl. 13 Maledizione | Lvl. 16 Ombra Notturna | Lvl. 21 Stordiraggio | Lvl. 25 Pugnodombra | Lvl. 31 Mangiasogni | Lvl. 39 Destinobbligato | Lvl. 45 Palla Ombra | Lvl. 53 Incubo | Lvl. 64 Malosguardo",
+    "mosse_tm": "Mimica (Tutor) | Mangiasogni (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Fulmine | Tossina | Psichico | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Provocazione | Baratto | Scippo | Forzasegreta"
+  },
+  {
+    "id": 94,
+    "nome": "Gengar",
+    "tipi": [
+      "Spettro",
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Ipnosi | Lvl. 1 Leccata | Lvl. 1 Dispetto | Lvl. 8 Dispetto | Lvl. 13 Maledizione | Lvl. 16 Ombra Notturna | Lvl. 21 Stordiraggio | Lvl. 25 Pugnodombra | Lvl. 31 Mangiasogni | Lvl. 39 Destinobbligato | Lvl. 45 Palla Ombra | Lvl. 53 Incubo | Lvl. 64 Malosguardo",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Mangiasogni (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Iper Raggio | Forza | Fulmine | Tuono | Tossina | Psichico | Doppioteam | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Spaccaroccia | Attaccalite | Facciata | Centripugno | Provocazione | Breccia | Baratto | Scippo | Forzasegreta"
+  },
+  {
+    "id": 95,
+    "nome": "Onix",
+    "tipi": [
+      "Roccia",
+      "Terra"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Stridio | Lvl. 8 Legatutto | Lvl. 12 Sassata | Lvl. 19 Rafforzatore | Lvl. 23 Ira | Lvl. 30 Dragospiro | Lvl. 34 Terrempesta | Lvl. 41 Schianto | Lvl. 45 Codacciaio | Lvl. 52 Sabbiotomba | Lvl. 56 Sdoppiatore",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Esplosione (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Boato | Forza | Terremoto | Fossa | Tossina | Doppioteam | Riposo | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Spaccaroccia | Attaccalite | Facciata | Provocazione | Forzasegreta | Rocciotomba"
+  },
+  {
+    "id": 96,
+    "nome": "Drowzee",
+    "tipi": [
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Botta | Lvl. 1 Ipnosi | Lvl. 7 Inibitore | Lvl. 11 Confusione | Lvl. 17 Bottintesta | Lvl. 21 Velenogas | Lvl. 27 Meditazione | Lvl. 31 Psichico | Lvl. 37 Psicamisù | Lvl. 41 Bullo | Lvl. 47 Divinazione",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Flash | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Centripugno | Provocazione | Breccia | Baratto | Scippo | Forzasegreta | Calmamente"
+  },
+  {
+    "id": 97,
+    "nome": "Hypno",
+    "tipi": [
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Botta | Lvl. 1 Inibitore | Lvl. 1 Confusione | Lvl. 1 Ipnosi | Lvl. 1 Incubo | Lvl. 7 Inibitore | Lvl. 11 Confusione | Lvl. 17 Bottintesta | Lvl. 21 Velenogas | Lvl. 29 Meditazione | Lvl. 35 Psichico | Lvl. 43 Psicamisù | Lvl. 49 Bullo | Lvl. 57 Divinazione",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Iper Raggio | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Flash | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Centripugno | Provocazione | Breccia | Baratto | Scippo | Forzasegreta | Calmamente"
+  },
+  {
+    "id": 98,
+    "nome": "Krabby",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Bolla | Lvl. 5 Fulmisguardo | Lvl. 12 Presa | Lvl. 16 Rafforzatore | Lvl. 23 Colpodifango | Lvl. 27 Pestone | Lvl. 34 Ghigliottina | Lvl. 38 Protezione | Lvl. 45 Martellata | Lvl. 49 Flagello",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Surf | Geloraggio | Bora | Forza | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Forzasegreta | Sub | Rocciotomba | Idropulsar"
+  },
+  {
+    "id": 99,
+    "nome": "Kingler",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Presa | Lvl. 1 Fulmisguardo | Lvl. 1 Rafforzatore | Lvl. 1 Bolla | Lvl. 1 Ferrartigli | Lvl. 5 Fulmisguardo | Lvl. 12 Presa | Lvl. 16 Rafforzatore | Lvl. 23 Colpodifango | Lvl. 27 Pestone | Lvl. 38 Ghigliottina | Lvl. 42 Protezione | Lvl. 57 Martellata | Lvl. 65 Flagello",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Surf | Geloraggio | Bora | Iper Raggio | Forza | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Forzasegreta | Sub | Rocciotomba | Idropulsar"
+  },
+  {
+    "id": 100,
+    "nome": "Voltorb",
+    "tipi": [
+      "Elettro"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Sottocarica | Lvl. 8 Stridio | Lvl. 15 Sonicboom | Lvl. 21 Scintilla | Lvl. 27 Autodistruzione | Lvl. 32 Rotolamento | Lvl. 37 Schermoluce | Lvl. 42 Comete | Lvl. 46 Esplosione | Lvl. 49 Specchiovelo",
+    "mosse_tm": "Tuononda (Tutor) | Mimica (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Fulmine | Tuono | Tossina | Doppioteam | Schermoluce | Flash | Riposo | Furto | Protezione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Attaccalite | Facciata | Provocazione | Forzasegreta | Ondashock"
+  },
+  {
+    "id": 101,
+    "nome": "Electrode",
+    "tipi": [
+      "Elettro"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Sonicboom | Lvl. 1 Stridio | Lvl. 1 Sottocarica | Lvl. 8 Stridio | Lvl. 15 Sonicboom | Lvl. 21 Scintilla | Lvl. 27 Autodistruzione | Lvl. 34 Rotolamento | Lvl. 41 Schermoluce | Lvl. 48 Comete | Lvl. 54 Esplosione | Lvl. 59 Specchiovelo",
+    "mosse_tm": "Tuononda (Tutor) | Mimica (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Iper Raggio | Fulmine | Tuono | Tossina | Doppioteam | Schermoluce | Flash | Riposo | Furto | Protezione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Attaccalite | Facciata | Provocazione | Forzasegreta | Ondashock"
+  },
+  {
+    "id": 102,
+    "nome": "Exeggcute",
+    "tipi": [
+      "Erba",
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Ipnosi | Lvl. 1 Attacco Pioggia | Lvl. 1 Baraonda | Lvl. 7 Riflesso | Lvl. 13 Parassiseme | Lvl. 19 Confusione | Lvl. 25 Paralizzante | Lvl. 31 Velenpolvere | Lvl. 37 Sonnifero | Lvl. 43 Solarraggio",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Forza | Solarraggio | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Flash | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Facciata | Baratto | Forzasegreta | Semitraglia"
+  },
+  {
+    "id": 103,
+    "nome": "Exeggutor",
+    "tipi": [
+      "Erba",
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Confusione | Lvl. 1 Ipnosi | Lvl. 1 Attacco Pioggia | Lvl. 19 Pestone | Lvl. 31 Uovobomba",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Iper Raggio | Forza | Solarraggio | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Flash | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Facciata | Baratto | Forzasegreta | Semitraglia"
+  },
+  {
+    "id": 104,
+    "nome": "Cubone",
+    "tipi": [
+      "Terra"
+    ],
+    "mosse_lvl": "Lvl. 1 Ruggito | Lvl. 5 Colpocoda | Lvl. 9 Ossoclava | Lvl. 13 Bottintesta | Lvl. 17 Fulmisguardo | Lvl. 21 Focalenergia | Lvl. 25 Ossomerang | Lvl. 29 Ira | Lvl. 33 Falsofinale | Lvl. 37 Colpo | Lvl. 41 Ossoraffica | Lvl. 45 Sdoppiatore",
+    "mosse_tm": "Megapugno (Tutor) | Danzaspada (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Lanciafiamme | Geloraggio | Bora | Forza | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Aeroassalto"
+  },
+  {
+    "id": 105,
+    "nome": "Marowak",
+    "tipi": [
+      "Terra"
+    ],
+    "mosse_lvl": "Lvl. 1 Bottintesta | Lvl. 1 Colpocoda | Lvl. 1 Ruggito | Lvl. 1 Ossoclava | Lvl. 5 Colpocoda | Lvl. 9 Ossoclava | Lvl. 13 Bottintesta | Lvl. 17 Fulmisguardo | Lvl. 21 Focalenergia | Lvl. 25 Ossomerang | Lvl. 32 Ira | Lvl. 39 Falsofinale | Lvl. 46 Colpo | Lvl. 53 Ossoraffica | Lvl. 61 Sdoppiatore",
+    "mosse_tm": "Megapugno (Tutor) | Danzaspada (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Lanciafiamme | Geloraggio | Bora | Iper Raggio | Forza | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Aeroassalto"
+  },
+  {
+    "id": 106,
+    "nome": "Hitmonlee",
+    "tipi": [
+      "Lotta"
+    ],
+    "mosse_lvl": "Lvl. 1 Doppiocalcio | Lvl. 1 Vendetta | Lvl. 6 Meditazione | Lvl. 11 Calciorullo | Lvl. 16 Calciosalto | Lvl. 20 Breccia | Lvl. 21 Focalenergia | Lvl. 26 Calcinvolo | Lvl. 31 Leggimente | Lvl. 36 Preveggenza | Lvl. 41 Resistenza | Lvl. 46 Megacalcio | Lvl. 51 Contropiede",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Forza | Terremoto | Tossina | Doppioteam | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Granfisico"
+  },
+  {
+    "id": 107,
+    "nome": "Hitmonchan",
+    "tipi": [
+      "Lotta"
+    ],
+    "mosse_lvl": "Lvl. 1 Cometapugno | Lvl. 1 Vendetta | Lvl. 7 Agilità | Lvl. 13 Inseguimento | Lvl. 20 Pugnorapido | Lvl. 26 Fuocopugno | Lvl. 26 Gelopugno | Lvl. 26 Tuonopugno | Lvl. 32 Stramontante | Lvl. 38 Megapugno | Lvl. 44 Individua | Lvl. 50 Contrattacco",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Forza | Terremoto | Tossina | Doppioteam | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Granfisico"
+  },
+  {
+    "id": 108,
+    "nome": "Lickitung",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Leccata | Lvl. 7 Supersuono | Lvl. 12 Ricciolscudo | Lvl. 18 Privazione | Lvl. 23 Pestone | Lvl. 29 Avvolgibotta | Lvl. 34 Inibitore | Lvl. 40 Schianto | Lvl. 45 Stridio | Lvl. 51 Rinfrescata",
+    "mosse_tm": "Megapugno (Tutor) | Danzaspada (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Forza | Solarraggio | Fulmine | Tuono | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Ondashock | Idropulsar"
+  },
+  {
+    "id": 109,
+    "nome": "Koffing",
+    "tipi": [
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Velenogas | Lvl. 9 Smog | Lvl. 17 Autodistruzione | Lvl. 21 Fango | Lvl. 25 Muro di Fumo | Lvl. 33 Nube | Lvl. 41 Esplosione | Lvl. 45 Destinobbligato | Lvl. 49 Memento",
+    "mosse_tm": "Mimica (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Lanciafiamme | Fulmine | Tuono | Tossina | Doppioteam | Fuocobomba | Flash | Riposo | Furto | Protezione | Fangobomba | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Provocazione | Forzasegreta | Ondashock"
+  },
+  {
+    "id": 110,
+    "nome": "Weezing",
+    "tipi": [
+      "Veleno"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Autodistruzione | Lvl. 1 Smog | Lvl. 1 Velenogas | Lvl. 9 Smog | Lvl. 17 Autodistruzione | Lvl. 21 Fango | Lvl. 25 Muro di Fumo | Lvl. 33 Nube | Lvl. 44 Esplosione | Lvl. 51 Destinobbligato | Lvl. 58 Memento",
+    "mosse_tm": "Mimica (Tutor) | Esplosione (Tutor) | Sostituto (Tutor) | Lanciafiamme | Iper Raggio | Fulmine | Tuono | Tossina | Doppioteam | Fuocobomba | Flash | Riposo | Furto | Protezione | Fangobomba | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Provocazione | Forzasegreta | Ondashock"
+  },
+  {
+    "id": 111,
+    "nome": "Rhyhorn",
+    "tipi": [
+      "Terra",
+      "Roccia"
+    ],
+    "mosse_lvl": "Lvl. 1 Incornata | Lvl. 1 Colpocoda | Lvl. 10 Pestone | Lvl. 15 Furia | Lvl. 24 Visotruce | Lvl. 29 Cadutamassi | Lvl. 38 Perforcorno | Lvl. 43 Riduttore | Lvl. 52 Terremoto | Lvl. 57 Megacorno",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Boato | Lanciafiamme | Geloraggio | Bora | Forza | Fulmine | Tuono | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Rocciotomba | Ondashock"
+  },
+  {
+    "id": 112,
+    "nome": "Rhydon",
+    "tipi": [
+      "Terra",
+      "Roccia"
+    ],
+    "mosse_lvl": "Lvl. 1 Pestone | Lvl. 1 Incornata | Lvl. 1 Furia | Lvl. 1 Colpocoda | Lvl. 10 Pestone | Lvl. 15 Furia | Lvl. 24 Visotruce | Lvl. 29 Cadutamassi | Lvl. 38 Perforcorno | Lvl. 46 Riduttore | Lvl. 58 Terremoto | Lvl. 66 Megacorno",
+    "mosse_tm": "Megapugno (Tutor) | Danzaspada (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Boato | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Forza | Fulmine | Tuono | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Ondashock"
+  },
+  {
+    "id": 113,
+    "nome": "Chansey",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Botta | Lvl. 1 Ruggito | Lvl. 5 Colpocoda | Lvl. 9 Rinfrescata | Lvl. 13 Covauova | Lvl. 17 Doppiasberla | Lvl. 23 Minimizzato | Lvl. 29 Canto | Lvl. 35 Uovobomba | Lvl. 41 Ricciolscudo | Lvl. 49 Schermoluce | Lvl. 57 Sdoppiatore",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Covauova (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Lanciafiamme | Geloraggio | Bora | Iper Raggio | Forza | Solarraggio | Fulmine | Tuono | Terremoto | Tossina | Psichico | Doppioteam | Schermoluce | Fuocobomba | Flash | Riposo | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Spaccaroccia | Grandine | Facciata | Centripugno | Breccia | Baratto | Scippo | Forzasegreta | Rocciotomba | Calmamente | Ondashock | Idropulsar"
+  },
+  {
+    "id": 114,
+    "nome": "Tangela",
+    "tipi": [
+      "Erba"
+    ],
+    "mosse_lvl": "Lvl. 1 Limitazione | Lvl. 1 Radicamento | Lvl. 4 Sonnifero | Lvl. 10 Assorbimento | Lvl. 13 Crescita | Lvl. 19 Velenpolvere | Lvl. 22 Frustata | Lvl. 28 Legatutto | Lvl. 31 Megassorbimento | Lvl. 37 Paralizzante | Lvl. 40 Schianto | Lvl. 46 Solletico",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Iper Raggio | Solarraggio | Tossina | Doppioteam | Flash | Riposo | Furto | Protezione | Fangobomba | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Semitraglia"
+  },
+  {
+    "id": 115,
+    "nome": "Kangaskhan",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Cometapugno | Lvl. 1 Fulmisguardo | Lvl. 7 Morso | Lvl. 13 Colpocoda | Lvl. 19 Bruciapelo | Lvl. 25 Megapugno | Lvl. 31 Ira | Lvl. 37 Resistenza | Lvl. 43 Stordipugno | Lvl. 49 Contropiede",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Boato | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Forza | Solarraggio | Fulmine | Tuono | Terremoto | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Spaccaroccia | Grandine | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Aeroassalto | Ondashock | Idropulsar"
+  },
+  {
+    "id": 116,
+    "nome": "Horsea",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Bolla | Lvl. 8 Muro di Fumo | Lvl. 15 Fulmisguardo | Lvl. 22 Pistolacqua | Lvl. 29 Tornado | Lvl. 36 Agilità | Lvl. 43 Idropompa | Lvl. 50 Dragodanza",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Tossina | Doppioteam | Cascata | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Grandine | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 117,
+    "nome": "Seadra",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Fulmisguardo | Lvl. 1 Pistolacqua | Lvl. 1 Muro di Fumo | Lvl. 1 Bolla | Lvl. 8 Muro di Fumo | Lvl. 15 Fulmisguardo | Lvl. 22 Pistolacqua | Lvl. 29 Tornado | Lvl. 40 Agilità | Lvl. 51 Idropompa | Lvl. 62 Dragodanza",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Iper Raggio | Tossina | Doppioteam | Cascata | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Grandine | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 118,
+    "nome": "Goldeen",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Colpocoda | Lvl. 1 Beccata | Lvl. 1 Docciascudo | Lvl. 10 Supersuono | Lvl. 15 Incornata | Lvl. 24 Flagello | Lvl. 29 Furia | Lvl. 38 Cascata | Lvl. 43 Perforcorno | Lvl. 52 Agilità | Lvl. 57 Megacorno",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Tossina | Doppioteam | Cascata | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Grandine | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 119,
+    "nome": "Seaking",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Colpocoda | Lvl. 1 Supersuono | Lvl. 1 Beccata | Lvl. 1 Docciascudo | Lvl. 10 Supersuono | Lvl. 15 Incornata | Lvl. 24 Flagello | Lvl. 29 Furia | Lvl. 41 Cascata | Lvl. 49 Perforcorno | Lvl. 61 Agilità | Lvl. 69 Megacorno",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Iper Raggio | Tossina | Doppioteam | Cascata | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Grandine | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 120,
+    "nome": "Staryu",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Rafforzatore | Lvl. 6 Pistolacqua | Lvl. 10 Rapigiro | Lvl. 15 Ripresa | Lvl. 19 Camuffamento | Lvl. 24 Comete | Lvl. 28 Bollaraggio | Lvl. 33 Minimizzato | Lvl. 37 Schermoluce | Lvl. 42 Cosmoforza | Lvl. 46 Idropompa",
+    "mosse_tm": "Sdoppiatore (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Fulmine | Tuono | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Cascata | Flash | Riposo | Protezione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Grandine | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 121,
+    "nome": "Starmie",
+    "tipi": [
+      "Acqua",
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Pistolacqua | Lvl. 1 Ripresa | Lvl. 1 Comete | Lvl. 1 Rapigiro | Lvl. 33 Stordiraggio",
+    "mosse_tm": "Sdoppiatore (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Iper Raggio | Fulmine | Tuono | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Cascata | Flash | Riposo | Protezione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Grandine | Facciata | Baratto | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 122,
+    "nome": "Mr. Mime",
+    "tipi": [
+      "Psico",
+      "Folletto"
+    ],
+    "mosse_lvl": "Lvl. 1 Barriera | Lvl. 5 Confusione | Lvl. 8 Sostituto | Lvl. 12 Meditazione | Lvl. 15 Doppiasberla | Lvl. 19 Schermoluce | Lvl. 19 Riflesso | Lvl. 22 Fogliamagica | Lvl. 26 Ripeti | Lvl. 29 Psicoraggio | Lvl. 33 Riciclo | Lvl. 36 Raggiro | Lvl. 40 Giocodiruolo | Lvl. 43 Psichico | Lvl. 47 Staffetta | Lvl. 50 Salvaguardia",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Iper Raggio | Solarraggio | Fulmine | Tuono | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Flash | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Attaccalite | Facciata | Centripugno | Provocazione | Breccia | Baratto | Scippo | Forzasegreta | Calmamente | Ondashock"
+  },
+  {
+    "id": 123,
+    "nome": "Scyther",
+    "tipi": [
+      "Coleottero",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Fulmisguardo | Lvl. 1 Attacco Rapido | Lvl. 6 Focalenergia | Lvl. 11 Inseguimento | Lvl. 16 Falsofinale | Lvl. 21 Agilità | Lvl. 26 Attacco d’Ala | Lvl. 31 Lacerazione | Lvl. 36 Danzaspada | Lvl. 41 Doppioteam | Lvl. 46 Tagliofuria",
+    "mosse_tm": "Danzaspada (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Iper Raggio | Tossina | Doppioteam | Riposo | Furto | Protezione | Alacciaio | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Aeroassalto"
+  },
+  {
+    "id": 124,
+    "nome": "Jynx",
+    "tipi": [
+      "Ghiaccio",
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Botta | Lvl. 1 Leccata | Lvl. 1 Demonbacio | Lvl. 1 Polneve | Lvl. 9 Demonbacio | Lvl. 13 Polneve | Lvl. 21 Doppiasberla | Lvl. 25 Gelopugno | Lvl. 35 Malosguardo | Lvl. 41 Falselacrime | Lvl. 51 Corposcontro | Lvl. 57 Ultimocanto | Lvl. 67 Bora",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Geloraggio | Bora | Iper Raggio | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Flash | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Palla Ombra | Grandine | Attaccalite | Facciata | Centripugno | Provocazione | Breccia | Baratto | Forzasegreta | Calmamente | Idropulsar"
+  },
+  {
+    "id": 125,
+    "nome": "Electabuzz",
+    "tipi": [
+      "Elettro"
+    ],
+    "mosse_lvl": "Lvl. 1 Tuonopugno | Lvl. 1 Fulmisguardo | Lvl. 1 Attacco Rapido | Lvl. 9 Tuonopugno | Lvl. 17 Schermoluce | Lvl. 25 Comete | Lvl. 36 Stridio | Lvl. 47 Fulmine | Lvl. 58 Tuono",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Iper Raggio | Forza | Fulmine | Tuono | Tossina | Psichico | Doppioteam | Schermoluce | Flash | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Ondashock"
+  },
+  {
+    "id": 126,
+    "nome": "Magmar",
+    "tipi": [
+      "Fuoco"
+    ],
+    "mosse_lvl": "Lvl. 1 Fuocopugno | Lvl. 1 Fulmisguardo | Lvl. 1 Braciere | Lvl. 1 Smog | Lvl. 7 Fulmisguardo | Lvl. 13 Smog | Lvl. 19 Fuocopugno | Lvl. 25 Muro di Fumo | Lvl. 33 Giornodisole | Lvl. 41 Lanciafiamme | Lvl. 49 Stordiraggio | Lvl. 57 Fuocobomba",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Lanciafiamme | Iper Raggio | Forza | Tossina | Psichico | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta"
+  },
+  {
+    "id": 127,
+    "nome": "Pinsir",
+    "tipi": [
+      "Coleottero"
+    ],
+    "mosse_lvl": "Lvl. 1 Presa | Lvl. 1 Focalenergia | Lvl. 7 Legatutto | Lvl. 13 Movim. Sismico | Lvl. 19 Rafforzatore | Lvl. 25 Vendetta | Lvl. 31 Breccia | Lvl. 37 Ghigliottina | Lvl. 43 Sottomissione | Lvl. 49 Danzaspada",
+    "mosse_tm": "Danzaspada (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Iper Raggio | Forza | Terremoto | Fossa | Tossina | Doppioteam | Riposo | Furto | Protezione | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Granfisico"
+  },
+  {
+    "id": 128,
+    "nome": "Tauros",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Colpocoda | Lvl. 4 Ira | Lvl. 8 Incornata | Lvl. 13 Visotruce | Lvl. 19 Inseguimento | Lvl. 26 Bullo | Lvl. 34 Riposo | Lvl. 43 Colpo | Lvl. 53 Riduttore",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Forza | Solarraggio | Fulmine | Tuono | Terremoto | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Rocciotomba | Ondashock | Idropulsar"
+  },
+  {
+    "id": 129,
+    "nome": "Magikarp",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Splash | Lvl. 15 Azione | Lvl. 30 Flagello",
+    "mosse_tm": "-"
+  },
+  {
+    "id": 130,
+    "nome": "Gyarados",
+    "tipi": [
+      "Acqua",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Colpo | Lvl. 20 Morso | Lvl. 25 Ira di Drago | Lvl. 30 Fulmisguardo | Lvl. 35 Tornado | Lvl. 40 Idropompa | Lvl. 45 Pioggiadanza | Lvl. 50 Dragodanza | Lvl. 55 Iper Raggio",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Boato | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Forza | Fulmine | Tuono | Terremoto | Tossina | Doppioteam | Fuocobomba | Cascata | Riposo | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Attaccalite | Facciata | Provocazione | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 131,
+    "nome": "Lapras",
+    "tipi": [
+      "Acqua",
+      "Ghiaccio"
+    ],
+    "mosse_lvl": "Lvl. 1 Ruggito | Lvl. 1 Canto | Lvl. 1 Pistolacqua | Lvl. 7 Nebbia | Lvl. 13 Corposcontro | Lvl. 19 Stordiraggio | Lvl. 25 Ultimocanto | Lvl. 31 Geloraggio | Lvl. 37 Pioggiadanza | Lvl. 43 Salvaguardia | Lvl. 49 Idropompa | Lvl. 55 Purogelo",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Boato | Surf | Geloraggio | Bora | Iper Raggio | Forza | Fulmine | Tuono | Tossina | Psichico | Doppioteam | Cascata | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Forzasegreta | Sub | Ondashock | Idropulsar"
+  },
+  {
+    "id": 132,
+    "nome": "Ditto",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Trasformazione",
+    "mosse_tm": "-"
+  },
+  {
+    "id": 133,
+    "nome": "Eevee",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Colpocoda | Lvl. 1 Altruismo | Lvl. 8 Turbosabbia | Lvl. 16 Ruggito | Lvl. 23 Attacco Rapido | Lvl. 30 Morso | Lvl. 36 Staffetta | Lvl. 42 Riduttore",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Fossa | Tossina | Doppioteam | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Facciata | Forzasegreta"
+  },
+  {
+    "id": 134,
+    "nome": "Vaporeon",
+    "tipi": [
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Colpocoda | Lvl. 1 Altruismo | Lvl. 8 Turbosabbia | Lvl. 16 Pistolacqua | Lvl. 23 Attacco Rapido | Lvl. 30 Morso | Lvl. 36 Raggiaurora | Lvl. 42 Nube | Lvl. 47 Scudo Acido | Lvl. 52 Idropompa",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Boato | Surf | Geloraggio | Bora | Iper Raggio | Fossa | Tossina | Doppioteam | Cascata | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Grandine | Facciata | Forzasegreta | Sub | Idropulsar"
+  },
+  {
+    "id": 135,
+    "nome": "Jolteon",
+    "tipi": [
+      "Elettro"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Colpocoda | Lvl. 1 Altruismo | Lvl. 8 Turbosabbia | Lvl. 16 Tuonoshock | Lvl. 23 Attacco Rapido | Lvl. 30 Doppiocalcio | Lvl. 36 Missilspillo | Lvl. 42 Tuononda | Lvl. 47 Agilità | Lvl. 52 Tuono",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Boato | Iper Raggio | Fulmine | Tuono | Fossa | Tossina | Doppioteam | Flash | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Facciata | Forzasegreta | Ondashock"
+  },
+  {
+    "id": 136,
+    "nome": "Flareon",
+    "tipi": [
+      "Fuoco"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Colpocoda | Lvl. 1 Altruismo | Lvl. 8 Turbosabbia | Lvl. 16 Braciere | Lvl. 23 Attacco Rapido | Lvl. 30 Morso | Lvl. 36 Turbofuoco | Lvl. 42 Smog | Lvl. 47 Fulmisguardo | Lvl. 52 Lanciafiamme",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Boato | Lanciafiamme | Iper Raggio | Fossa | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Facciata | Forzasegreta | Vampata"
+  },
+  {
+    "id": 137,
+    "nome": "Porygon",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 1 Conversione | Lvl. 1 Conversione2 | Lvl. 9 Agilità | Lvl. 12 Psicoraggio | Lvl. 20 Ripresa | Lvl. 24 Affilatore | Lvl. 32 Localizza | Lvl. 36 Tripletta | Lvl. 44 Riciclo | Lvl. 48 Falcecannone",
+    "mosse_tm": "Sdoppiatore (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Geloraggio | Bora | Iper Raggio | Solarraggio | Fulmine | Tuono | Tossina | Psichico | Doppioteam | Flash | Riposo | Furto | Protezione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Facciata | Forzasegreta | Aeroassalto | Ondashock"
+  },
+  {
+    "id": 138,
+    "nome": "Omanyte",
+    "tipi": [
+      "Roccia",
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Ritirata | Lvl. 1 Limitazione | Lvl. 13 Morso | Lvl. 19 Pistolacqua | Lvl. 25 Colpodifango | Lvl. 31 Fulmisguardo | Lvl. 37 Protezione | Lvl. 43 Solletico | Lvl. 49 Forzantica | Lvl. 55 Idropompa",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Tossina | Doppioteam | Cascata | Riposo | Furto | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Forzasegreta | Sub | Rocciotomba | Idropulsar"
+  },
+  {
+    "id": 139,
+    "nome": "Omastar",
+    "tipi": [
+      "Roccia",
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Morso | Lvl. 1 Pistolacqua | Lvl. 1 Ritirata | Lvl. 1 Limitazione | Lvl. 13 Morso | Lvl. 19 Pistolacqua | Lvl. 25 Colpodifango | Lvl. 31 Fulmisguardo | Lvl. 37 Protezione | Lvl. 40 Sparalance | Lvl. 46 Solletico | Lvl. 55 Forzantica | Lvl. 65 Idropompa",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Iper Raggio | Tossina | Doppioteam | Cascata | Riposo | Furto | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Forzasegreta | Sub | Rocciotomba | Idropulsar"
+  },
+  {
+    "id": 140,
+    "nome": "Kabuto",
+    "tipi": [
+      "Roccia",
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Rafforzatore | Lvl. 13 Assorbimento | Lvl. 19 Fulmisguardo | Lvl. 25 Colpodifango | Lvl. 31 Turbosabbia | Lvl. 37 Resistenza | Lvl. 43 Ferrostrido | Lvl. 49 Megassorbimento | Lvl. 55 Forzantica",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Surf | Geloraggio | Bora | Fossa | Tossina | Doppioteam | Cascata | Riposo | Furto | Protezione | Terrempesta | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Forzasegreta | Rocciotomba | Aeroassalto | Idropulsar"
+  },
+  {
+    "id": 141,
+    "nome": "Kabutops",
+    "tipi": [
+      "Roccia",
+      "Acqua"
+    ],
+    "mosse_lvl": "Lvl. 1 Graffio | Lvl. 1 Fulmisguardo | Lvl. 1 Assorbimento | Lvl. 1 Rafforzatore | Lvl. 1 Tagliofuria | Lvl. 13 Assorbimento | Lvl. 19 Fulmisguardo | Lvl. 25 Colpodifango | Lvl. 31 Turbosabbia | Lvl. 37 Resistenza | Lvl. 40 Lacerazione | Lvl. 46 Ferrostrido | Lvl. 55 Megassorbimento | Lvl. 65 Forzantica",
+    "mosse_tm": "Danzaspada (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Surf | Geloraggio | Bora | Iper Raggio | Fossa | Tossina | Doppioteam | Cascata | Riposo | Furto | Protezione | Terrempesta | Gigassorbimento | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Spaccaroccia | Grandine | Facciata | Breccia | Forzasegreta | Sub | Rocciotomba | Aeroassalto | Idropulsar"
+  },
+  {
+    "id": 142,
+    "nome": "Aerodactyl",
+    "tipi": [
+      "Roccia",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Attacco d’Ala | Lvl. 8 Agilità | Lvl. 15 Morso | Lvl. 22 Supersuono | Lvl. 29 Forzantica | Lvl. 36 Visotruce | Lvl. 43 Riduttore | Lvl. 50 Iper Raggio",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Volo | Boato | Lanciafiamme | Iper Raggio | Forza | Terremoto | Tossina | Doppioteam | Fuocobomba | Riposo | Furto | Protezione | Terrempesta | Alacciaio | Attrazione | Ritorno | Frustrazione | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Attaccalite | Facciata | Provocazione | Forzasegreta | Rocciotomba | Aeroassalto | Dragartigli"
+  },
+  {
+    "id": 143,
+    "nome": "Snorlax",
+    "tipi": [
+      "Normale"
+    ],
+    "mosse_lvl": "Lvl. 1 Azione | Lvl. 5 Amnesia | Lvl. 9 Ricciolscudo | Lvl. 13 Panciamburo | Lvl. 17 Bottintesta | Lvl. 21 Sbadiglio | Lvl. 25 Riposo | Lvl. 29 Russare | Lvl. 33 Corposcontro | Lvl. 37 Sonnolalia | Lvl. 41 Blocco | Lvl. 45 Supplica | Lvl. 49 Rotolamento | Lvl. 53 Iper Raggio",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Forza | Solarraggio | Fulmine | Tuono | Terremoto | Tossina | Psichico | Doppioteam | Fuocobomba | Riposo | Protezione | Terrempesta | Attrazione | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Facciata | Centripugno | Breccia | Forzasegreta | Rocciotomba | Ondashock | Idropulsar"
+  },
+  {
+    "id": 144,
+    "nome": "Articuno",
+    "tipi": [
+      "Ghiaccio",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Raffica | Lvl. 1 Polneve | Lvl. 13 Nebbia | Lvl. 25 Agilità | Lvl. 37 Leggimente | Lvl. 49 Geloraggio | Lvl. 61 Riflesso | Lvl. 73 Bora | Lvl. 85 Purogelo",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Volo | Boato | Geloraggio | Bora | Iper Raggio | Tossina | Doppioteam | Riflesso | Riposo | Protezione | Terrempesta | Alacciaio | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Grandine | Facciata | Forzasegreta | Aeroassalto | Idropulsar"
+  },
+  {
+    "id": 145,
+    "nome": "Zapdos",
+    "tipi": [
+      "Elettro",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Beccata | Lvl. 1 Tuonoshock | Lvl. 13 Tuononda | Lvl. 25 Agilità | Lvl. 37 Individua | Lvl. 49 Perforbecco | Lvl. 61 Sottocarica | Lvl. 73 Schermoluce | Lvl. 85 Tuono",
+    "mosse_tm": "Sdoppiatore (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Volo | Boato | Iper Raggio | Fulmine | Tuono | Tossina | Doppioteam | Schermoluce | Flash | Riposo | Protezione | Terrempesta | Alacciaio | Ritorno | Frustrazione | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Aeroassalto | Ondashock"
+  },
+  {
+    "id": 146,
+    "nome": "Moltres",
+    "tipi": [
+      "Fuoco",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Attacco d’Ala | Lvl. 1 Braciere | Lvl. 13 Turbofuoco | Lvl. 25 Agilità | Lvl. 37 Resistenza | Lvl. 49 Lanciafiamme | Lvl. 61 Salvaguardia | Lvl. 73 Ondacalda | Lvl. 85 Aeroattacco",
+    "mosse_tm": "Sdoppiatore (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Volo | Boato | Lanciafiamme | Iper Raggio | Tossina | Doppioteam | Fuocobomba | Riposo | Protezione | Terrempesta | Alacciaio | Ritorno | Frustrazione | Salvaguardia | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Facciata | Forzasegreta | Vampata | Aeroassalto"
+  },
+  {
+    "id": 147,
+    "nome": "Dratini",
+    "tipi": [
+      "Drago"
+    ],
+    "mosse_lvl": "Lvl. 1 Avvolgibotta | Lvl. 1 Fulmisguardo | Lvl. 8 Tuononda | Lvl. 15 Tornado | Lvl. 22 Ira di Drago | Lvl. 29 Schianto | Lvl. 36 Agilità | Lvl. 43 Salvaguardia | Lvl. 50 Oltraggio | Lvl. 57 Iper Raggio",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Fulmine | Tuono | Tossina | Doppioteam | Fuocobomba | Cascata | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Grandine | Facciata | Forzasegreta | Ondashock | Idropulsar"
+  },
+  {
+    "id": 148,
+    "nome": "Dragonair",
+    "tipi": [
+      "Drago"
+    ],
+    "mosse_lvl": "Lvl. 1 Avvolgibotta | Lvl. 1 Fulmisguardo | Lvl. 1 Tuononda | Lvl. 1 Tornado | Lvl. 8 Tuononda | Lvl. 15 Tornado | Lvl. 22 Ira di Drago | Lvl. 29 Schianto | Lvl. 38 Agilità | Lvl. 47 Salvaguardia | Lvl. 56 Oltraggio | Lvl. 65 Iper Raggio",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Fulmine | Tuono | Tossina | Doppioteam | Fuocobomba | Cascata | Riposo | Protezione | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Grandine | Facciata | Forzasegreta | Ondashock | Idropulsar"
+  },
+  {
+    "id": 149,
+    "nome": "Dragonite",
+    "tipi": [
+      "Drago",
+      "Volante"
+    ],
+    "mosse_lvl": "Lvl. 1 Avvolgibotta | Lvl. 1 Fulmisguardo | Lvl. 1 Tuononda | Lvl. 1 Tornado | Lvl. 8 Tuononda | Lvl. 15 Tornado | Lvl. 22 Ira di Drago | Lvl. 29 Schianto | Lvl. 38 Agilità | Lvl. 47 Salvaguardia | Lvl. 55 Attacco d’Ala | Lvl. 61 Oltraggio | Lvl. 75 Iper Raggio",
+    "mosse_tm": "Corposcontro (Tutor) | Sdoppiatore (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Sostituto (Tutor) | Taglio | Volo | Boato | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Forza | Fulmine | Tuono | Terremoto | Tossina | Doppioteam | Fuocobomba | Cascata | Riposo | Protezione | Terrempesta | Alacciaio | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Spaccaroccia | Grandine | Facciata | Centripugno | Breccia | Forzasegreta | Sub | Rocciotomba | Aeroassalto | Dragartigli | Ondashock | Idropulsar"
+  },
+  {
+    "id": 150,
+    "nome": "Mewtwo",
+    "tipi": [
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Inibitore | Lvl. 1 Confusione | Lvl. 11 Barriera | Lvl. 22 Nebbia | Lvl. 33 Comete | Lvl. 44 Ripresa | Lvl. 55 Salvaguardia | Lvl. 66 Psichico | Lvl. 77 Psicamisù | Lvl. 88 Divinazione | Lvl. 99 Amnesia",
+    "mosse_tm": "Megapugno (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Mangiasogni (Tutor) | Sostituto (Tutor) | Lanciafiamme | Geloraggio | Bora | Iper Raggio | Forza | Solarraggio | Fulmine | Tuono | Terremoto | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Fuocobomba | Flash | Riposo | Protezione | Terrempesta | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Spaccaroccia | Grandine | Attaccalite | Facciata | Centripugno | Provocazione | Breccia | Baratto | Scippo | Forzasegreta | Rocciotomba | Aeroassalto | Granfisico | Calmamente | Ondashock | Idropulsar"
+  },
+  {
+    "id": 151,
+    "nome": "Mew",
+    "tipi": [
+      "Psico"
+    ],
+    "mosse_lvl": "Lvl. 1 Botta | Lvl. 10 Trasformazione | Lvl. 20 Megapugno | Lvl. 30 Metronomo | Lvl. 40 Psichico | Lvl. 50 Forzantica",
+    "mosse_tm": "Megapugno (Tutor) | Danzaspada (Tutor) | Megacalcio (Tutor) | Corposcontro (Tutor) | Sdoppiatore (Tutor) | Contrattacco (Tutor) | Movim. Sismico (Tutor) | Tuononda (Tutor) | Mimica (Tutor) | Metronomo (Tutor) | Covauova (Tutor) | Mangiasogni (Tutor) | Esplosione (Tutor) | Frana (Tutor) | Sostituto (Tutor) | Taglio | Volo | Boato | Lanciafiamme | Surf | Geloraggio | Bora | Iper Raggio | Forza | Solarraggio | Fulmine | Tuono | Terremoto | Fossa | Tossina | Psichico | Doppioteam | Schermoluce | Riflesso | Fuocobomba | Cascata | Flash | Riposo | Furto | Protezione | Fangobomba | Terrempesta | Gigassorbimento | Alacciaio | Attrazione | Ritorno | Frustrazione | Salvaguardia | Codacciaio | Introforza | Pioggiadanza | Giornodisole | Palla Ombra | Spaccaroccia | Grandine | Attaccalite | Facciata | Centripugno | Provocazione | Breccia | Baratto | Scippo | Forzasegreta | Sub | Vampata | Rocciotomba | Semitraglia | Aeroassalto | Dragartigli | Granfisico | Calmamente | Ondashock | Idropulsar"
+  }
+]

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex Gen 3 Guide</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #121212; color: #e0e0e0; margin: 0; padding: 12px; }
+    
+    /* Lock Screen */
+    #lock-screen {
+      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+      background: #121212; display: flex; flex-direction: column;
+      align-items: center; justify-content: center; z-index: 999;
+    }
+    #lock-screen input { padding: 10px; font-size: 16px; text-align: center; border-radius: 6px; border: 1px solid #333; background: #1e1e1e; color: #fff; margin-bottom: 10px; }
+    #lock-screen button { padding: 10px 20px; font-size: 14px; background: #cb0000; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
+
+    /* Main UI */
+    .app-header { text-align: center; margin-bottom: 15px; }
+    .app-header h1 { color: #ffcc00; font-size: 20px; text-transform: uppercase; margin: 0 0 10px 0; }
+    
+    .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
+    .search-input, .type-select {
+      padding: 8px 12px; background: #1e1e1e; border: 1px solid #333; border-radius: 6px; color: #fff; font-size: 14px;
+    }
+    .search-input { flex: 1; min-width: 180px; }
+    .type-select { width: 140px; }
+
+    table { width: 100%; border-collapse: collapse; background: #1e1e1e; border-radius: 6px; overflow: hidden; }
+    th { background: #cb0000; color: #fff; padding: 8px; font-size: 11px; text-transform: uppercase; text-align: left; }
+    td { padding: 6px 8px; border-bottom: 1px solid #2a2a2a; font-size: 11px; vertical-align: middle; }
+    tr:nth-child(even) { background: #181818; }
+
+    .pkmn-name { font-weight: bold; color: #fff; display: block; margin-bottom: 2px; }
+    .type-badge { font-size: 8px; font-weight: bold; padding: 2px 4px; border-radius: 3px; color: #fff; margin-right: 2px; display: inline-block; }
+    .tag { display: inline-block; padding: 2px 4px; border-radius: 3px; font-size: 9px; margin: 1px; white-space: nowrap; }
+    .lvl-tag { background: #2a2d32; border: 1px solid #3a3f47; color: #e0e0e0; }
+    .tm-tag { background: #1e3a5f; color: #9bbdff; border: 1px solid #2b5288; }
+    .tutor-tag { background: #3b1e5f; color: #d8b4fe; border: 1px solid #572b88; }
+  </style>
+</head>
+<body>
+
+  <!-- Schermata di blocco con PIN -->
+  <div id="lock-screen">
+    <h2 style="color:#ffcc00;">Pokédex Privato</h2>
+    <input type="password" id="pin-input" placeholder="Inserisci PIN (default: 1234)">
+    <button onclick="checkPin()">Sblocca</button>
+  </div>
+
+  <div id="app-content" style="display:none;">
+    <div class="app-header">
+      <h1>Pokédex Gen 3</h1>
+    </div>
+
+    <div class="filter-bar">
+      <input type="text" id="search" class="search-input" placeholder="Cerca Pokémon o Mossa..." oninput="renderTable()">
+      <select id="type-filter" class="type-select" onchange="renderTable()">
+        <option value="">Tutti i Tipi</option>
+      </select>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 40px;">ID</th>
+          <th style="width: 40px;"></th>
+          <th style="width: 100px;">Pokémon</th>
+          <th>Mosse Livello</th>
+          <th>Mosse MT / MN / Tutor</th>
+        </tr>
+      </thead>
+      <tbody id="pokedex-body"></tbody>
+    </table>
+  </div>
+
+  <script>
+    const MY_PIN = "1234"; // Puoi cambiare qui il tuo PIN privato
+    const TYPE_COLORS = {
+      'Normale':'#A8A878','Fuoco':'#F08030','Acqua':'#6890F0','Erba':'#78C850',
+      'Elettro':'#F8D030','Ghiaccio':'#98D8D8','Lotta':'#C03028','Veleno':'#A040A0',
+      'Terra':'#E0C068','Volante':'#A890F0','Psico':'#F85888','Coleottero':'#A8B820',
+      'Roccia':'#B8A038','Spettro':'#705898','Drago':'#7038E8','Acciaio':'#B8B8D0','Buio':'#705848'
+    };
+
+    let pokedexData = [];
+
+    function checkPin() {
+      const input = document.getElementById('pin-input').value;
+      if (input === MY_PIN) {
+        document.getElementById('lock-screen').style.display = 'none';
+        document.getElementById('app-content').style.display = 'block';
+        loadData();
+      } else {
+        alert("PIN Errato!");
+      }
+    }
+
+    async function loadData() {
+      const res = await fetch('pokedex.json');
+      pokedexData = await res.json();
+      populateTypeFilter();
+      renderTable();
+    }
+
+    function populateTypeFilter() {
+      const select = document.getElementById('type-filter');
+      Object.keys(TYPE_COLORS).forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = t;
+        select.appendChild(opt);
+      });
+    }
+
+    function formatMovesLvl(str) {
+      if (!str || str === '-') return '-';
+      return str.split(' | ').map(m => {
+        const [lvl, name] = m.split(' ', 2);
+        return `<span class="tag lvl-tag"><b style="color:#ffcc00">${lvl}</b> ${m.substring(lvl.length+1)}</span>`;
+      }).join(' ');
+    }
+
+    function formatMovesTM(str) {
+      if (!str || str === '-') return '-';
+      return str.split(' | ').map(m => {
+        if (m.includes('(Tutor)')) {
+          return `<span class="tag tutor-tag">${m.replace(' (Tutor)', '')}</span>`;
+        }
+        return `<span class="tag tm-tag">${m}</span>`;
+      }).join(' ');
+    }
+
+    function renderTable() {
+      const search = document.getElementById('search').value.toLowerCase();
+      const typeFilter = document.getElementById('type-filter').value;
+      const tbody = document.getElementById('pokedex-body');
+      tbody.innerHTML = '';
+
+      pokedexData.filter(p => {
+        const matchName = p.nome.toLowerCase().includes(search);
+        const matchMoveLvl = p.mosse_lvl.toLowerCase().includes(search);
+        const matchMoveTM = p.mosse_tm.toLowerCase().includes(search);
+        const matchType = typeFilter === "" || p.tipi.includes(typeFilter);
+        return (matchName || matchMoveLvl || matchMoveTM) && matchType;
+      }).forEach(p => {
+        const tiposHtml = p.tipi.map(t => `<span class="type-badge" style="background:${TYPE_COLORS[t] || '#68A090'}">${t.toUpperCase()}</span>`).join('');
+        const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/${p.id}.png`;
+
+        tbody.innerHTML += `
+          <tr>
+            <td style="color:#888; font-weight:bold; text-align:center;">#${String(p.id).padStart(3, '0')}</td>
+            <td><img src="${imgUrl}" width="32" height="32" style="image-rendering:pixelated;"></td>
+            <td>
+              <span class="pkmn-name">${p.nome}</span>
+              <div>${tiposHtml}</div>
+            </td>
+            <td>${formatMovesLvl(p.mosse_lvl)}</td>
+            <td>${formatMovesTM(p.mosse_tm)}</td>
+          </tr>
+        `;
+      });
+    }
+  </script>
+</body>
+</html>
