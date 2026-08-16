@@ -1,56 +1,359 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista MT - RFVF</title>
-  <style>
-    body { font-family: sans-serif; background: #121212; color: #fff; margin: 0; padding: 15px; }
-    h1 { text-align: center; color: #ffcb05; }
-    .nav { display: flex; gap: 10px; margin-bottom: 15px; }
-    .nav a { background: #333; color: #fff; text-decoration: none; padding: 8px 12px; border-radius: 6px; font-weight: bold; }
-    .search-input { width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 6px; border: none; box-sizing: border-box; }
-    table { width: 100%; border-collapse: collapse; background: #1e1e1e; }
-    th, td { padding: 10px; text-align: left; border-bottom: 1px solid #333; }
-    th { background: #2a2a2a; color: #ffcb05; }
-  </style>
-</head>
-<body>
-
-  <div class="nav">
-    <a href="index.html">← Torna al Pokédex</a>
-  </div>
-
-  <h1>Lista Macchine Tecniche (MT)</h1>
-  <input type="text" id="search" class="search-input" placeholder="Cerca MT o Mossa..." oninput="filterMT()">
-
-  <table id="mt-table">
-    <thead>
-      <tr>
-        <th>N°</th>
-        <th>Mossa</th>
-        <th>Tipo</th>
-        <th>Ottenimento</th>
-      </tr>
-    </thead>
-    <tbody id="mt-list">
-      <!-- Aggiungi le tue MT qui -->
-      <tr><td>MT01</td><td>Centripugno</td><td>Lotta</td><td>Sofficeopoli / Via Vittoria</td></tr>
-      <tr><td>MT02</td><td>Dragartigli</td><td>Drago</td><td>Grotta Dimenticata</td></tr>
-      <tr><td>MT03</td><td>Idropulsar</td><td>Acqua</td><td>Palestra di Celestopoli</td></tr>
-      <tr><td>MT04</td><td>Calmamente</td><td>Psico</td><td>Palestra di Zafferanopoli</td></tr>
-      <tr><td>MT05</td><td>Boato</td><td>Normale</td><td>Percorso 4 / Smeraldopoli</td></tr>
-    </tbody>
-  </table>
-
-  <script>
-    function filterMT() {
-      const q = document.getElementById('search').value.toLowerCase();
-      const rows = document.querySelectorAll('#mt-list tr');
-      rows.forEach(r => {
-        r.style.display = r.innerText.toLowerCase().includes(q) ? '' : 'none';
-      });
-    }
-  </script>
-</body>
-</html>
+<html><head>
+<style>
+    body { font-family: Arial, sans-serif; background-color: #fff; padding: 5px; }
+    table { border-collapse: collapse; margin: 0 auto; background: white; width: auto; box-shadow: 0 0 6px rgba(0,0,0,0.1); }
+    th { background-color: #3B4CCA; color: white; padding: 4px 8px; font-size: 12px; }
+    td { padding: 2px 6px; border-bottom: 1px solid #eee; font-size: 12px; text-align: center; height: 22px; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+</style>
+</head><body><table><tr><th>MT</th><th>Mossa</th><th>Tipo</th><th>Posizione</th></tr>
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT01</td>
+        <td style="font-weight: bold; text-align: left;">Centripugno</td>
+        <td><span style="background-color: #C03028; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">LOTTA</span></td>
+        <td style="text-align: left;">Silph SpA 4°P</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT02</td>
+        <td style="font-weight: bold; text-align: left;">Dragartigli</td>
+        <td><span style="background-color: #7038F8; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">DRAGO</span></td>
+        <td style="text-align: left;">Via Vittoria (PT)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT03</td>
+        <td style="font-weight: bold; text-align: left;">Idropulsar</td>
+        <td><span style="background-color: #6890F0; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">ACQUA</span></td>
+        <td style="text-align: left;">Palestra di Celestopoli (Misty)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT04</td>
+        <td style="font-weight: bold; text-align: left;">Calmamente</td>
+        <td><span style="background-color: #F85888; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">PSICO</span></td>
+        <td style="text-align: left;">Palestra di Zafferanopoli (Sabrina)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT05</td>
+        <td style="font-weight: bold; text-align: left;">Boato</td>
+        <td><span style="background-color: #A8A878; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">NORMALE</span></td>
+        <td style="text-align: left;">Percorso 4 / C.C. Azzurropoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT06</td>
+        <td style="font-weight: bold; text-align: left;">Tossina</td>
+        <td><span style="background-color: #A040A0; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">VELENO</span></td>
+        <td style="text-align: left;">Palestra di Fucsiapoli (Koga)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT07</td>
+        <td style="font-weight: bold; text-align: left;">Grandine</td>
+        <td><span style="background-color: #98D8D8; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">GHIACCIO</span></td>
+        <td style="text-align: left;">Via Vittoria (1°P)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT08</td>
+        <td style="font-weight: bold; text-align: left;">Granfisico</td>
+        <td><span style="background-color: #C03028; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">LOTTA</span></td>
+        <td style="text-align: left;">Silph SpA 6°P</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT09</td>
+        <td style="font-weight: bold; text-align: left;">Semitraglia</td>
+        <td><span style="background-color: #78C850; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">ERBA</span></td>
+        <td style="text-align: left;">Monte Luna (PT)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT10</td>
+        <td style="font-weight: bold; text-align: left;">Introforza</td>
+        <td><span style="background-color: #A8A878; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">NORMALE</span></td>
+        <td style="text-align: left;">Utilizzare abilità Raccolta (5%)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT11</td>
+        <td style="font-weight: bold; text-align: left;">Giornodisole</td>
+        <td><span style="background-color: #F08030; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">FUOCO</span></td>
+        <td style="text-align: left;">Zona Safari</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT12</td>
+        <td style="font-weight: bold; text-align: left;">Provocazione</td>
+        <td><span style="background-color: #705848; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">BUIO</span></td>
+        <td style="text-align: left;">Rifugio Rocket </td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT13</td>
+        <td style="font-weight: bold; text-align: left;">Geloraggio</td>
+        <td><span style="background-color: #98D8D8; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">GHIACCIO</span></td>
+        <td style="text-align: left;">Casinò Azzurropoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT14</td>
+        <td style="font-weight: bold; text-align: left;">Bora</td>
+        <td><span style="background-color: #98D8D8; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">GHIACCIO</span></td>
+        <td style="text-align: left;">C.C. Azzurropoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT15</td>
+        <td style="font-weight: bold; text-align: left;">Iper Raggio</td>
+        <td><span style="background-color: #A8A878; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">NORMALE</span></td>
+        <td style="text-align: left;">Casinò Azzurropoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT16</td>
+        <td style="font-weight: bold; text-align: left;">Schermoluce</td>
+        <td><span style="background-color: #F85888; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">PSICO</span></td>
+        <td style="text-align: left;">C.C. Azzurropoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT17</td>
+        <td style="font-weight: bold; text-align: left;">Protezione</td>
+        <td><span style="background-color: #A8A878; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">NORMALE</span></td>
+        <td style="text-align: left;">Centrale Elettrica</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT18</td>
+        <td style="font-weight: bold; text-align: left;">Pioggiadanza</td>
+        <td><span style="background-color: #6890F0; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">ACQUA</span></td>
+        <td style="text-align: left;">Percorso 15</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT19</td>
+        <td style="font-weight: bold; text-align: left;">Gigassorbimento</td>
+        <td><span style="background-color: #78C850; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">ERBA</span></td>
+        <td style="text-align: left;">Palestra di Azzurropoli (Erika)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT20</td>
+        <td style="font-weight: bold; text-align: left;">Salvaguardia</td>
+        <td><span style="background-color: #A8A878; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">NORMALE</span></td>
+        <td style="text-align: left;">C.C. Azzurropoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT21</td>
+        <td style="font-weight: bold; text-align: left;">Frustrazione</td>
+        <td><span style="background-color: #A8A878; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">NORMALE</span></td>
+        <td style="text-align: left;">Rifugio Rocket</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT22</td>
+        <td style="font-weight: bold; text-align: left;">Solarraggio</td>
+        <td><span style="background-color: #78C850; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">ERBA</span></td>
+        <td style="text-align: left;">Isola Cannella (Laboratorio)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT23</td>
+        <td style="font-weight: bold; text-align: left;">Codacciaio</td>
+        <td><span style="background-color: #B8B8D0; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">ACCIAIO</span></td>
+        <td style="text-align: left;">Casinò Azzurropoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT24</td>
+        <td style="font-weight: bold; text-align: left;">Fulmine</td>
+        <td><span style="background-color: #F8D030; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">ELETTRO</span></td>
+        <td style="text-align: left;">Palestra di Aranciopoli / Casinò</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT25</td>
+        <td style="font-weight: bold; text-align: left;">Tuono</td>
+        <td><span style="background-color: #F8D030; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">ELETTRO</span></td>
+        <td style="text-align: left;">Centrale Elettrica</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT26</td>
+        <td style="font-weight: bold; text-align: left;">Terremoto</td>
+        <td><span style="background-color: #E0C068; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">TERRA</span></td>
+        <td style="text-align: left;">Palestra di Smeraldopoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT27</td>
+        <td style="font-weight: bold; text-align: left;">Ritorno</td>
+        <td><span style="background-color: #A8A878; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">NORMALE</span></td>
+        <td style="text-align: left;">Percorso 12</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT28</td>
+        <td style="font-weight: bold; text-align: left;">Fossa</td>
+        <td><span style="background-color: #E0C068; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">TERRA</span></td>
+        <td style="text-align: left;">Celestopoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT29</td>
+        <td style="font-weight: bold; text-align: left;">Psichico</td>
+        <td><span style="background-color: #F85888; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">PSICO</span></td>
+        <td style="text-align: left;">Zafferanopoli / Casinò</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT30</td>
+        <td style="font-weight: bold; text-align: left;">Palla Ombra</td>
+        <td><span style="background-color: #705898; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">SPETTRO</span></td>
+        <td style="text-align: left;">Azzurropoli (Casinò)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT31</td>
+        <td style="font-weight: bold; text-align: left;">Breccia</td>
+        <td><span style="background-color: #C03028; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">LOTTA</span></td>
+        <td style="text-align: left;">M/N Anna / Azzurropoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT32</td>
+        <td style="font-weight: bold; text-align: left;">Doppio Team</td>
+        <td><span style="background-color: #A8A878; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">NORMALE</span></td>
+        <td style="text-align: left;">Zona Safari</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT33</td>
+        <td style="font-weight: bold; text-align: left;">Riflesso</td>
+        <td><span style="background-color: #F85888; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">PSICO</span></td>
+        <td style="text-align: left;">C.C. Azzurropoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT34</td>
+        <td style="font-weight: bold; text-align: left;">Ondashock</td>
+        <td><span style="background-color: #F8D030; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">ELETTRO</span></td>
+        <td style="text-align: left;">Palestra di Aranciopoli (Lt. Surge)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT35</td>
+        <td style="font-weight: bold; text-align: left;">Lanciafiamme</td>
+        <td><span style="background-color: #F08030; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">FUOCO</span></td>
+        <td style="text-align: left;">Casinò Azzurropoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT36</td>
+        <td style="font-weight: bold; text-align: left;">Fangobomba</td>
+        <td><span style="background-color: #A040A0; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">VELENO</span></td>
+        <td style="text-align: left;">Magazzino Team Rocket (Quintisola)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT37</td>
+        <td style="font-weight: bold; text-align: left;">Terrempesta</td>
+        <td><span style="background-color: #B8A038; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">ROCCIA</span></td>
+        <td style="text-align: left;">Via Vittoria (1°P)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT38</td>
+        <td style="font-weight: bold; text-align: left;">Fuocobomba</td>
+        <td><span style="background-color: #F08030; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">FUOCO</span></td>
+        <td style="text-align: left;">Palestra di Isola Cannella (Blaine)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT39</td>
+        <td style="font-weight: bold; text-align: left;">Rocciotomba</td>
+        <td><span style="background-color: #B8A038; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">ROCCIA</span></td>
+        <td style="text-align: left;">Palestra di Plumbeopoli (Brock)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT40</td>
+        <td style="font-weight: bold; text-align: left;">Aeroassalto</td>
+        <td><span style="background-color: #A890F0; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">VOLANTE</span></td>
+        <td style="text-align: left;">Percorso 9</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT41</td>
+        <td style="font-weight: bold; text-align: left;">Attaccalite</td>
+        <td><span style="background-color: #A8A878; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">NORMALE</span></td>
+        <td style="text-align: left;">Silph SpA 3°P</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT42</td>
+        <td style="font-weight: bold; text-align: left;">Facciata</td>
+        <td><span style="background-color: #A8A878; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">NORMALE</span></td>
+        <td style="text-align: left;">Primisola (Labirinto)</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT43</td>
+        <td style="font-weight: bold; text-align: left;">Forzasegreta</td>
+        <td><span style="background-color: #A8A878; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">NORMALE</span></td>
+        <td style="text-align: left;">Percorso 25</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT44</td>
+        <td style="font-weight: bold; text-align: left;">Riposo</td>
+        <td><span style="background-color: #F85888; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">PSICO</span></td>
+        <td style="text-align: left;">M/N Anna</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT45</td>
+        <td style="font-weight: bold; text-align: left;">Attrazione</td>
+        <td><span style="background-color: #A8A878; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">NORMALE</span></td>
+        <td style="text-align: left;">Percorso 24 / C.C. Azzurropoli</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT46</td>
+        <td style="font-weight: bold; text-align: left;">Furto</td>
+        <td><span style="background-color: #705848; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">BUIO</span></td>
+        <td style="text-align: left;">Monte Luna</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT47</td>
+        <td style="font-weight: bold; text-align: left;">Alacciaio</td>
+        <td><span style="background-color: #B8B8D0; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">ACCIAIO</span></td>
+        <td style="text-align: left;">Zona Safari</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT48</td>
+        <td style="font-weight: bold; text-align: left;">Baratto</td>
+        <td><span style="background-color: #F85888; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">PSICO</span></td>
+        <td style="text-align: left;">Percorso 12</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT49</td>
+        <td style="font-weight: bold; text-align: left;">Scippo</td>
+        <td><span style="background-color: #705848; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">BUIO</span></td>
+        <td style="text-align: left;">Rifugio Rocket</td>
+    </tr>
+    
+    <tr>
+        <td style="font-weight: bold; color: #3B4CCA;">MT50</td>
+        <td style="font-weight: bold; text-align: left;">Vampata</td>
+        <td><span style="background-color: #F08030; color: white; padding: 2px 5px; border-radius: 3px; font-weight: bold; font-size: 11px;">FUOCO</span></td>
+        <td style="text-align: left;">Via Vittoria (2°P)</td>
+    </tr>
+    </table></body></html>
