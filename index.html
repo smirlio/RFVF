@@ -7,7 +7,7 @@
   <title>Pokémon Rosso Fuoco e Verde Foglia</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-  <style>
+<style>
   :root {
     --bg-color: #121212;
     --text-color: #e0e0e0;
@@ -43,28 +43,28 @@
     background: var(--bg-color); display: flex; flex-direction: column;
     align-items: center; justify-content: center; z-index: 999;
   }
-  #lock-screen input { padding: 10px; font-size: 16px; text-align: center; border-radius: 6px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-color); margin-bottom: 10px; }
-  #lock-screen button { padding: 10px 20px; font-size: 14px; background: #cb0000; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
+  #lock-screen input { padding: 10px; font-size: 18px; text-align: center; border-radius: 6px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-color); margin-bottom: 10px; } /* <-- Ingrandito (era 16px) */
+  #lock-screen button { padding: 10px 20px; font-size: 16px; background: #cb0000; color: #fff; border: none; border-radius: 6px; cursor: pointer; } /* <-- Ingrandito (era 14px) */
 
   /* Main UI */
   .app-header { text-align: center; margin-bottom: 15px; }
-  .app-header h1 { color: #ffcc00; font-size: 20px; text-transform: uppercase; margin: 0 0 10px 0; }
+  .app-header h1 { color: #ffcc00; font-size: 24px; text-transform: uppercase; margin: 0 0 10px 0; } /* <-- Ingrandito (era 20px) */
   
   .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
   .search-input, .type-select {
-    padding: 8px 12px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-color); font-size: 14px;
+    padding: 8px 12px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-color); font-size: 16px; /* <-- Ingrandito (era 14px) */
   }
   .search-input { flex: 1; min-width: 180px; }
   .type-select { width: 140px; }
 
   table { width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 6px; overflow: hidden; }
-  th { background: #cb0000; color: #fff; padding: 8px; font-size: 11px; text-transform: uppercase; text-align: left; }
-  td { padding: 6px 8px; border-bottom: 1px solid var(--row-border); font-size: 11px; vertical-align: middle; }
+  th { background: #cb0000; color: #fff; padding: 10px 8px; font-size: 13px; text-transform: uppercase; text-align: left; } /* <-- Ingrandito (era 11px) */
+  td { padding: 8px; border-bottom: 1px solid var(--row-border); font-size: 13px; vertical-align: middle; } /* <-- Ingrandito (era 11px) */
   tr:nth-child(even) { background: var(--row-even); }
 
-  .pkmn-name { font-weight: bold; color: var(--name-color); display: block; margin-bottom: 2px; }
-  .type-badge { font-size: 8px; font-weight: bold; padding: 2px 4px; border-radius: 3px; color: #fff; margin-right: 2px; display: inline-block; }
-  .tag { display: inline-block; padding: 2px 4px; border-radius: 3px; font-size: 9px; margin: 1px; white-space: nowrap; }
+  .pkmn-name { font-weight: bold; color: var(--name-color); font-size: 14px; display: block; margin-bottom: 2px; } /* <-- Ingrandito */
+  .type-badge { font-size: 10px; font-weight: bold; padding: 2px 5px; border-radius: 3px; color: #fff; margin-right: 2px; display: inline-block; } /* <-- Ingrandito (era 8px) */
+  .tag { display: inline-block; padding: 3px 5px; border-radius: 3px; font-size: 11px; margin: 1px; white-space: nowrap; } /* <-- Ingrandito (era 9px) */
   .lvl-tag { background: var(--lvl-bg); border: 1px solid var(--lvl-border); color: var(--lvl-color); }
   .tm-tag { background: #1e3a5f; color: #9bbdff; border: 1px solid #2b5288; }
   .tutor-tag { background: #3b1e5f; color: #d8b4fe; border: 1px solid #572b88; }
