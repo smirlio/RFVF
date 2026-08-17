@@ -105,6 +105,10 @@
   display: block;
   margin: 0 auto;
 }
+    .tag.hm-tag {
+  border: 2px solid #000000 !important;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
   </style>
 </head>
 <body>
@@ -288,10 +292,9 @@
       });
     }
 
-  function createMoveTag(moveName, label = '', isTutor = false) {
+function createMoveTag(moveName, label = '', isTutor = false, isHM = false) {
       const cleanName = moveName.trim();
       
-      // Rimuove apostrofi (dritti e curvi) e doppi spazi per un match perfetto
       const lookupKey = cleanName.toLowerCase()
         .replace(/['’]/g, ' ')
         .replace(/\s+/g, ' ')
@@ -300,7 +303,10 @@
       const moveType = MOVES_DATABASE[lookupKey] || 'Normale';
       const color = TYPE_COLORS[moveType] || '#A8A878';
       const text = label ? `<b style="color:#ffcc00">${label}</b> ${cleanName}` : cleanName;
-      const extraClass = isTutor ? ' tutor-tag' : '';
+      
+      let extraClass = '';
+      if (isTutor) extraClass += ' tutor-tag';
+      if (isHM) extraClass += ' hm-tag';
       
       return `<span class="tag${extraClass}" style="background-color: ${color};">${text}</span>`;
     }
@@ -340,18 +346,23 @@ function formatMovesTM(str) {
         }
       });
 
-      // Ordinamento alfabetico per ogni categoria
-      tutors.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
+// Ordinamento alfabetico per ciascuna categoria
       hms.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
       tms.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
+      tutors.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
 
-      // Unione: Tutor -> MN -> MT
-      const sortedMoves = [...tutors, ...hms, ...tms];
+      // Nuovo ordine: MN -> MT -> Tutor
+      const sortedMoves = [...hms, ...tms, ...tutors];
 
       return sortedMoves.map(m => {
-        const isTutor = m.toLowerCase().includes('(tutor)');
+        const lower = m.toLowerCase();
+        const cleanForCheck = lower.replace(/\s*\((tutor|mn|hm)\)/gi, '').trim();
+        
+        const isTutor = lower.includes('(tutor)');
+        const isHM = lower.includes('(mn)') || lower.includes('(hm)') || HM_LIST.includes(cleanForCheck);
         const cleanName = m.replace(/\s*\((Tutor|MN|HM)\)/gi, '').trim();
-        return createMoveTag(cleanName, '', isTutor);
+        
+        return createMoveTag(cleanName, '', isTutor, isHM);
       }).join(' ');
     }
 
