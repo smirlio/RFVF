@@ -3,84 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <button id="theme-toggle">☀️ Light Mode</button>
   <title>Pokémon Rosso Fuoco e Verde Foglia</title>
   <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
-<style>
-  :root {
-    --bg-color: #121212;
-    --text-color: #e0e0e0;
-    --card-bg: #1e1e1e;
-    --border-color: #333333;
-    --row-even: #181818;
-    --row-border: #2a2a2a;
-    --name-color: #ffffff;
-    --lvl-bg: #2a2d32;
-    --lvl-border: #3a3f47;
-    --lvl-color: #e0e0e0;
-  }
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --card-bg: #1e1e1e;
+      --border-color: #333333;
+      --row-even: #181818;
+      --row-border: #2a2a2a;
+      --name-color: #ffffff;
+      --lvl-bg: #2a2d32;
+      --lvl-border: #3a3f47;
+      --lvl-color: #e0e0e0;
+    }
 
-  body.light-mode {
-    --bg-color: #ffffff;
-    --text-color: #1a1a1a;
-    --card-bg: #f5f5f5;
-    --border-color: #cccccc;
-    --row-even: #ededed;
-    --row-border: #e0e0e0;
-    --name-color: #000000;
-    --lvl-bg: #e2e8f0;
-    --lvl-border: #cbd5e1;
-    --lvl-color: #1e293b;
-  }
+    body.light-mode {
+      --bg-color: #ffffff;
+      --text-color: #1a1a1a;
+      --card-bg: #f5f5f5;
+      --border-color: #cccccc;
+      --row-even: #ededed;
+      --row-border: #e0e0e0;
+      --name-color: #000000;
+      --lvl-bg: #e2e8f0;
+      --lvl-border: #cbd5e1;
+      --lvl-color: #1e293b;
+    }
 
-  * { box-sizing: border-box; }
-  body { font-family: 'Inter', sans-serif; background: var(--bg-color); color: var(--text-color); margin: 0; padding: 12px; transition: background 0.3s, color 0.3s; }
-  
-  /* Lock Screen */
-  #lock-screen {
-    position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
-    background: var(--bg-color); display: flex; flex-direction: column;
-    align-items: center; justify-content: center; z-index: 999;
-  }
-  #lock-screen input { padding: 10px; font-size: 18px; text-align: center; border-radius: 6px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-color); margin-bottom: 10px; } /* <-- Ingrandito (era 16px) */
-  #lock-screen button { padding: 10px 20px; font-size: 16px; background: #cb0000; color: #fff; border: none; border-radius: 6px; cursor: pointer; } /* <-- Ingrandito (era 14px) */
+    * { box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: var(--bg-color); color: var(--text-color); margin: 0; padding: 12px; transition: background 0.3s, color 0.3s; }
+    
+    /* Lock Screen */
+    #lock-screen {
+      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+      background: var(--bg-color); display: flex; flex-direction: column;
+      align-items: center; justify-content: center; z-index: 999;
+    }
+    #lock-screen input { padding: 10px; font-size: 18px; text-align: center; border-radius: 6px; border: 1px solid var(--border-color); background: var(--card-bg); color: var(--text-color); margin-bottom: 10px; }
+    #lock-screen button { padding: 10px 20px; font-size: 16px; background: #cb0000; color: #fff; border: none; border-radius: 6px; cursor: pointer; }
 
-  /* Main UI */
-  .app-header { text-align: center; margin-bottom: 15px; }
-  .app-header h1 { color: #ffcc00; font-size: 24px; text-transform: uppercase; margin: 0 0 10px 0; } /* <-- Ingrandito (era 20px) */
-  
-  .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; }
-  .search-input, .type-select {
-    padding: 8px 12px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-color); font-size: 16px; /* <-- Ingrandito (era 14px) */
-  }
-  .search-input { flex: 1; min-width: 180px; }
-  .type-select { width: 140px; }
+    /* Main UI */
+    .app-header { text-align: center; margin-bottom: 15px; }
+    .app-header h1 { color: #ffcc00; font-size: 24px; text-transform: uppercase; margin: 0 0 10px 0; }
+    
+    .filter-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 15px; align-items: center; }
+    .search-input, .type-select {
+      padding: 8px 12px; background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-color); font-size: 16px;
+    }
+    .search-input { flex: 1; min-width: 180px; }
+    .type-select { width: 140px; }
 
-  table { width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 6px; overflow: hidden; }
-  th { background: #cb0000; color: #fff; padding: 10px 8px; font-size: 13px; text-transform: uppercase; text-align: left; } /* <-- Ingrandito (era 11px) */
-  td { padding: 8px; border-bottom: 1px solid var(--row-border); font-size: 13px; vertical-align: middle; } /* <-- Ingrandito (era 11px) */
-  tr:nth-child(even) { background: var(--row-even); }
+    table { width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 6px; overflow: hidden; }
+    th { background: #cb0000; color: #fff; padding: 10px 8px; font-size: 13px; text-transform: uppercase; text-align: left; }
+    td { padding: 8px; border-bottom: 1px solid var(--row-border); font-size: 13px; vertical-align: middle; }
+    tr:nth-child(even) { background: var(--row-even); }
 
-  .pkmn-name { font-weight: bold; color: var(--name-color); font-size: 14px; display: block; margin-bottom: 2px; } /* <-- Ingrandito */
-  .type-badge { font-size: 10px; font-weight: bold; padding: 2px 5px; border-radius: 3px; color: #fff; margin-right: 2px; display: inline-block; } /* <-- Ingrandito (era 8px) */
-.tag { 
-  display: inline-block; 
-  padding: 3px 6px; 
-  border-radius: 4px; 
-  font-size: 11px; 
-  font-weight: bold; 
-  margin: 1px; 
-  white-space: nowrap; 
-  color: #ffffff; 
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7); 
-}
+    .pkmn-name { font-weight: bold; color: var(--name-color); font-size: 14px; display: block; margin-bottom: 2px; }
+    .type-badge { font-size: 10px; font-weight: bold; padding: 2px 5px; border-radius: 3px; color: #fff; margin-right: 2px; display: inline-block; }
+    
+    .tag { 
+      display: inline-block; 
+      padding: 3px 6px; 
+      border-radius: 4px; 
+      font-size: 11px; 
+      font-weight: bold; 
+      margin: 1px; 
+      white-space: nowrap; 
+      color: #ffffff; 
+      text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7); 
+    }
 
-.tutor-tag {
-  border: 1.5px dashed #ffffff;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-}
-</style>
+    .tutor-tag {
+      border: 1.5px dashed #ffffff;
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+    }
+
+    #theme-toggle {
+      padding: 8px 12px;
+      background: var(--card-bg);
+      color: var(--text-color);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
@@ -96,14 +106,15 @@
       <h1>Pokédex di Kanto</h1>
     </div>
 
-<div class="filter-bar">
-  <input type="text" id="search" class="search-input" placeholder="Cerca Pokémon o Mossa..." oninput="renderTable()">
-  <select id="type-filter" class="type-select" onchange="renderTable()">
-    <option value="">Tutti i Tipi</option>
-  </select>
-  <a href="https://drive.google.com/file/d/1Rbj1qFU_6WqZBckz0FPQQX9aLMgVvrBs/view?usp=sharing" target="_blank" style="padding: 8px 12px; background: #cb0000; color: #fff; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: bold; white-space: nowrap; display: inline-flex; align-items: center;">Apri Guida PDF</a>
-  <a href="mt.html" style="padding: 8px 12px; background: #3b4cca; color: #fff; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: bold; white-space: nowrap; display: inline-flex; align-items: center;">Lista MT</a>
-</div>
+    <div class="filter-bar">
+      <input type="text" id="search" class="search-input" placeholder="Cerca Pokémon o Mossa..." oninput="renderTable()">
+      <select id="type-filter" class="type-select" onchange="renderTable()">
+        <option value="">Tutti i Tipi</option>
+      </select>
+      <button id="theme-toggle">☀️ Light Mode</button>
+      <a href="https://drive.google.com/file/d/1Rbj1qFU_6WqZBckz0FPQQX9aLMgVvrBs/view?usp=sharing" target="_blank" style="padding: 8px 12px; background: #cb0000; color: #fff; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: bold; white-space: nowrap; display: inline-flex; align-items: center;">Apri Guida PDF</a>
+      <a href="mt.html" style="padding: 8px 12px; background: #3b4cca; color: #fff; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: bold; white-space: nowrap; display: inline-flex; align-items: center;">Lista MT</a>
+    </div>
 
     <table>
       <thead>
@@ -119,14 +130,27 @@
     </table>
   </div>
 
-  
   <script>
-    const MY_PIN = "1234"; // Puoi cambiare qui il tuo PIN privato
+    const MY_PIN = "1234";
+    
     const TYPE_COLORS = {
-      'Normale':'#A8A878','Fuoco':'#F08030','Acqua':'#6890F0','Erba':'#78C850',
-      'Elettro':'#F8D030','Ghiaccio':'#98D8D8','Lotta':'#C03028','Veleno':'#A040A0',
-      'Terra':'#E0C068','Volante':'#A890F0','Psico':'#F85888','Coleottero':'#A8B820',
-      'Roccia':'#B8A038','Spettro':'#705898','Drago':'#7038E8','Acciaio':'#B8B8D0','Buio':'#705848'
+      'Normale': '#A8A878', 'Fuoco': '#F08030', 'Acqua': '#6890F0', 'Erba': '#78C850',
+      'Elettro': '#F8D030', 'Ghiaccio': '#98D8D8', 'Lotta': '#C03028', 'Veleno': '#A040A0',
+      'Terra': '#E0C068', 'Volante': '#A890F0', 'Psico': '#F85888', 'Coleottero': '#A8B820',
+      'Roccia': '#B8A038', 'Spettro': '#705898', 'Drago': '#7038F8', 'Acciaio': '#B8B8D0', 'Buio': '#705848'
+    };
+
+    // Dizionario dei tipi per le mosse principali
+    const MOVES_DATABASE = {
+      'Azione': 'Normale', 'Ruggito': 'Normale', 'Parassiseme': 'Erba', 'Frustata': 'Erba',
+      'Velenpolvere': 'Veleno', 'Sonnifero': 'Erba', 'Foglielama': 'Erba', 'Profumino': 'Normale',
+      'Crescita': 'Normale', 'Sintesi': 'Erba', 'Solarraggio': 'Erba', 'Azione': 'Normale',
+      'Danzaspada': 'Normale', 'Corposcontro': 'Normale', 'Sdoppiatore': 'Normale', 'Mimica': 'Normale',
+      'Sostituto': 'Normale', 'Gigassorbimento': 'Erba', 'Attrazione': 'Normale', 'Ritorno': 'Normale',
+      'Frustrazione': 'Normale', 'Introforza': 'Normale', 'Giornodisole': 'Fuoco', 'Taglio': 'Normale',
+      'Forza': 'Normale', 'Flash': 'Normale', 'Riposo': 'Psico', 'Protezione': 'Normale',
+      'Fangobomba': 'Veleno', 'Semitraglia': 'Erba', 'Radicalbero': 'Erba', 'Braciere': 'Fuoco',
+      'Pistolacqua': 'Acqua', 'Azione': 'Normale'
     };
 
     let pokedexData = [];
@@ -136,6 +160,7 @@
       if (input === MY_PIN) {
         document.getElementById('lock-screen').style.display = 'none';
         document.getElementById('app-content').style.display = 'block';
+        setupThemeToggle();
         loadData();
       } else {
         alert("PIN Errato!");
@@ -159,21 +184,31 @@
       });
     }
 
+    function createMoveTag(moveName, label = '', isTutor = false) {
+      const moveType = MOVES_DATABASE[moveName] || 'Normale';
+      const color = TYPE_COLORS[moveType] || '#3a3f47';
+      const text = label ? `<b style="color:#ffcc00">${label}</b> ${moveName}` : moveName;
+      const extraClass = isTutor ? ' tutor-tag' : '';
+      
+      return `<span class="tag${extraClass}" style="background-color: ${color};">${text}</span>`;
+    }
+
     function formatMovesLvl(str) {
       if (!str || str === '-') return '-';
       return str.split(' | ').map(m => {
-        const [lvl, name] = m.split(' ', 2);
-        return `<span class="tag lvl-tag"><b style="color:#ffcc00">${lvl}</b> ${m.substring(lvl.length+1)}</span>`;
+        const parts = m.split(' ');
+        const lvl = parts[0] + (parts[1] ? ' ' + parts[1] : ''); // es. "Lvl. 1" o "Lvl.1"
+        const name = m.substring(lvl.length).trim();
+        return createMoveTag(name, lvl, false);
       }).join(' ');
     }
 
     function formatMovesTM(str) {
       if (!str || str === '-') return '-';
       return str.split(' | ').map(m => {
-        if (m.includes('(Tutor)')) {
-          return `<span class="tag tutor-tag">${m.replace(' (Tutor)', '')}</span>`;
-        }
-        return `<span class="tag tm-tag">${m}</span>`;
+        const isTutor = m.includes('(Tutor)');
+        const cleanName = m.replace(' (Tutor)', '').trim();
+        return createMoveTag(cleanName, '', isTutor);
       }).join(' ');
     }
 
@@ -207,17 +242,16 @@
         `;
       });
     }
-  </script>
-  <script>
-    const toggleBtn = document.getElementById('theme-toggle');
 
-    // Mantiene la preferenza salvata nel browser
-    if (localStorage.getItem('theme') === 'light') {
-      document.body.classList.add('light-mode');
-      if (toggleBtn) toggleBtn.textContent = '🌙 Dark Mode';
-    }
+    function setupThemeToggle() {
+      const toggleBtn = document.getElementById('theme-toggle');
+      if (!toggleBtn) return;
 
-    if (toggleBtn) {
+      if (localStorage.getItem('theme') === 'light') {
+        document.body.classList.add('light-mode');
+        toggleBtn.textContent = '🌙 Dark Mode';
+      }
+
       toggleBtn.addEventListener('click', () => {
         document.body.classList.toggle('light-mode');
         const isLight = document.body.classList.contains('light-mode');
@@ -225,37 +259,6 @@
         localStorage.setItem('theme', isLight ? 'light' : 'dark');
       });
     }
-  </script>
-<script>
-    // Mappa dei colori ufficiali dei tipi
-    const TYPE_COLORS = {
-      NORMAL: '#A8A878',
-      FIRE: '#F08030',
-      WATER: '#6890F0',
-      GRASS: '#78C850',
-      ELECTRIC: '#F8D030',
-      ICE: '#98D8D8',
-      FIGHTING: '#C03028',
-      POISON: '#A040A0',
-      GROUND: '#E0C068',
-      FLYING: '#A890F0',
-      PSYCHIC: '#F85888',
-      BUG: '#A8B820',
-      ROCK: '#B8A038',
-      GHOST: '#705898',
-      DRAGON: '#7038F8',
-      DARK: '#705848',
-      STEEL: '#B8B8D0',
-      FAIRY: '#EE99AC'
-    };
-  
-function createMoveTag(moveName, moveType, label = '', isTutor = false) {
-  const color = TYPE_COLORS[moveType?.toUpperCase()] || '#68A090';
-  const text = label ? `${label}: ${moveName}` : moveName;
-  const extraClass = isTutor ? ' tutor-tag' : '';
-  
-  return `<span class="tag${extraClass}" style="background-color: ${color};">${text}</span>`;
-}
   </script>
 </body>
 </html>
