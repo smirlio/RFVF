@@ -130,7 +130,7 @@
     </table>
   </div>
 
-  <script>
+<script>
     const MY_PIN = "1234";
     
     const TYPE_COLORS = {
@@ -140,17 +140,25 @@
       'Roccia': '#B8A038', 'Spettro': '#705898', 'Drago': '#7038F8', 'Acciaio': '#B8B8D0', 'Buio': '#705848'
     };
 
-    // Dizionario dei tipi per le mosse principali
+    // Dizionario completo mosse di Terza Generazione
     const MOVES_DATABASE = {
       'Azione': 'Normale', 'Ruggito': 'Normale', 'Parassiseme': 'Erba', 'Frustata': 'Erba',
       'Velenpolvere': 'Veleno', 'Sonnifero': 'Erba', 'Foglielama': 'Erba', 'Profumino': 'Normale',
-      'Crescita': 'Normale', 'Sintesi': 'Erba', 'Solarraggio': 'Erba', 'Azione': 'Normale',
-      'Danzaspada': 'Normale', 'Corposcontro': 'Normale', 'Sdoppiatore': 'Normale', 'Mimica': 'Normale',
-      'Sostituto': 'Normale', 'Gigassorbimento': 'Erba', 'Attrazione': 'Normale', 'Ritorno': 'Normale',
-      'Frustrazione': 'Normale', 'Introforza': 'Normale', 'Giornodisole': 'Fuoco', 'Taglio': 'Normale',
-      'Forza': 'Normale', 'Flash': 'Normale', 'Riposo': 'Psico', 'Protezione': 'Normale',
-      'Fangobomba': 'Veleno', 'Semitraglia': 'Erba', 'Radicalbero': 'Erba', 'Braciere': 'Fuoco',
-      'Pistolacqua': 'Acqua', 'Azione': 'Normale'
+      'Crescita': 'Normale', 'Sintesi': 'Erba', 'Solarraggio': 'Erba', 'Danzaspada': 'Normale',
+      'Corposcontro': 'Normale', 'Sdoppiatore': 'Normale', 'Mimica': 'Normale', 'Sostituto': 'Normale',
+      'Gigassorbimento': 'Erba', 'Attrazione': 'Normale', 'Ritorno': 'Normale', 'Frustrazione': 'Normale',
+      'Introforza': 'Normale', 'Giornodisole': 'Fuoco', 'Taglio': 'Normale', 'Forza': 'Normale',
+      'Flash': 'Normale', 'Riposo': 'Psico', 'Protezione': 'Normale', 'Fangobomba': 'Veleno',
+      'Semitraglia': 'Erba', 'Radicalbero': 'Erba', 'Braciere': 'Fuoco', 'Pistolacqua': 'Acqua',
+      'Lanciafiamme': 'Fuoco', 'Pioggiadanza': 'Acqua', 'Terremoto': 'Terra', 'Fossa': 'Terra',
+      'Fossile': 'Roccia', 'Frana': 'Roccia', 'Rotolamento': 'Roccia', 'Forzaspada': 'Normale',
+      'Maledizione': 'Spettro', 'Palla Ombra': 'Spettro', 'Fulmine': 'Elettro', 'Tuono': 'Elettro',
+      'Onda Anomala': 'Acqua', 'Idropompa': 'Acqua', 'Bolla': 'Acqua', 'Gelo': 'Ghiaccio',
+      'Geloraggio': 'Ghiaccio', 'Brezza': 'Ghiaccio', 'Sottomissione': 'Lotta', 'Colpo Basso': 'Lotta',
+      'Incrocolpo': 'Lotta', 'Volo': 'Volante', 'Aeroassalto': 'Volante', 'Raffica': 'Volante',
+      'Psichico': 'Psico', 'Confusione': 'Psico', 'Morsura': 'Buio', 'Sgranocchio': 'Buio',
+      'Ferroartigli': 'Acciaio', 'Metalcoppia': 'Acciaio', 'Dragofuria': 'Drago', 'Iper Raggio': 'Normale',
+      'Coleottero': 'Coleottero'
     };
 
     let pokedexData = [];
@@ -168,14 +176,19 @@
     }
 
     async function loadData() {
-      const res = await fetch('pokedex.json');
-      pokedexData = await res.json();
-      populateTypeFilter();
-      renderTable();
+      try {
+        const res = await fetch('pokedex.json');
+        pokedexData = await res.json();
+        populateTypeFilter();
+        renderTable();
+      } catch (err) {
+        console.error("Errore caricamento pokedex.json:", err);
+      }
     }
 
     function populateTypeFilter() {
       const select = document.getElementById('type-filter');
+      select.innerHTML = '<option value="">Tutti i Tipi</option>';
       Object.keys(TYPE_COLORS).forEach(t => {
         const opt = document.createElement('option');
         opt.value = t;
@@ -185,108 +198,32 @@
     }
 
     function createMoveTag(moveName, label = '', isTutor = false) {
-// Cache per salvare i tipi delle mosse già lette dall'API
-    const movesTypeCache = {};
-
-    // Funzione asincrona per recuperare il tipo di qualsiasi mossa (in italiano o inglese)
-    async function getMoveType(moveName) {
-      const cleanName = moveName.trim().toLowerCase();
-      if (movesTypeCache[cleanName]) return movesTypeCache[cleanName];
-
-      try {
-        // Conversione nomi italiani comuni per l'API se necessario
-        const apiName = cleanName
-          .replace(/ /g, '-')
-          .replace(/à/g, 'a').replace(/è/g, 'e').replace(/é/g, 'e')
-          .replace(/ì/g, 'i').replace(/ò/g, 'o').replace(/ù/g, 'u');
-
-        const res = await fetch(`https://pokeapi.co/api/v2/move/${apiName}`);
-        if (!res.ok) throw new Error();
-        const data = await res.json();
-        
-        // Mappatura tipo dall'inglese all'italiano
-        const typeMap = {
-          normal: 'Normale', fire: 'Fuoco', water: 'Acqua', grass: 'Erba',
-          electric: 'Elettro', ice: 'Ghiaccio', fighting: 'Lotta', poison: 'Veleno',
-          ground: 'Terra', flying: 'Volante', psychic: 'Psico', bug: 'Coleottero',
-          rock: 'Roccia', ghost: 'Spettro', dragon: 'Drago', steel: 'Acciaio', dark: 'Buio'
-        };
-
-        const translatedType = typeMap[data.type.name] || 'Normale';
-        movesTypeCache[cleanName] = translatedType;
-        return translatedType;
-      } catch {
-        movesTypeCache[cleanName] = 'Normale';
-        return 'Normale';
-      }
-    }
-
-    async function createMoveTag(moveName, label = '', isTutor = false) {
-      const moveType = await getMoveType(moveName);
+      const cleanName = moveName.trim();
+      const moveType = MOVES_DATABASE[cleanName] || 'Normale';
       const color = TYPE_COLORS[moveType] || '#A8A878';
-      const text = label ? `<b style="color:#ffcc00">${label}</b> ${moveName}` : moveName;
+      const text = label ? `<b style="color:#ffcc00">${label}</b> ${cleanName}` : cleanName;
       const extraClass = isTutor ? ' tutor-tag' : '';
       
       return `<span class="tag${extraClass}" style="background-color: ${color};">${text}</span>`;
     }
 
-    async function formatMovesLvl(str) {
+    function formatMovesLvl(str) {
       if (!str || str === '-') return '-';
-      const moves = str.split(' | ');
-      const formatted = await Promise.all(moves.map(async m => {
+      return str.split(' | ').map(m => {
         const parts = m.split(' ');
         const lvl = parts[0] + (parts[1] ? ' ' + parts[1] : '');
         const name = m.substring(lvl.length).trim();
-        return await createMoveTag(name, lvl, false);
-      }));
-      return formatted.join(' ');
+        return createMoveTag(name, lvl, false);
+      }).join(' ');
     }
 
-    async function formatMovesTM(str) {
+    function formatMovesTM(str) {
       if (!str || str === '-') return '-';
-      const moves = str.split(' | ');
-      const formatted = await Promise.all(moves.map(async m => {
+      return str.split(' | ').map(m => {
         const isTutor = m.includes('(Tutor)');
         const cleanName = m.replace(' (Tutor)', '').trim();
-        return await createMoveTag(cleanName, '', isTutor);
-      }));
-      return formatted.join(' ');
-    }
-
-    async function renderTable() {
-      const search = document.getElementById('search').value.toLowerCase();
-      const typeFilter = document.getElementById('type-filter').value;
-      const tbody = document.getElementById('pokedex-body');
-      tbody.innerHTML = '';
-
-      const filtered = pokedexData.filter(p => {
-        const matchName = p.nome.toLowerCase().includes(search);
-        const matchMoveLvl = p.mosse_lvl.toLowerCase().includes(search);
-        const matchMoveTM = p.mosse_tm.toLowerCase().includes(search);
-        const matchType = typeFilter === "" || p.tipi.includes(typeFilter);
-        return (matchName || matchMoveLvl || matchMoveTM) && matchType;
-      });
-
-      for (const p of filtered) {
-        const tiposHtml = p.tipi.map(t => `<span class="type-badge" style="background:${TYPE_COLORS[t] || '#68A090'}">${t.toUpperCase()}</span>`).join('');
-        const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/${p.id}.png`;
-
-        const movesLvlHtml = await formatMovesLvl(p.mosse_lvl);
-        const movesTMHtml = await formatMovesTM(p.mosse_tm);
-
-        tbody.innerHTML += `
-          <tr>
-            <td style="color:#888; font-weight:bold; text-align:center;">#${String(p.id).padStart(3, '0')}</td>
-            <td><img src="${imgUrl}" width="32" height="32" style="image-rendering:pixelated;"></td>
-            <td>
-              <span class="pkmn-name">${p.nome}</span>
-              <div>${tiposHtml}</div>
-            </td>
-            <td>${movesLvlHtml}</td>
-            <td>${movesTMHtml}</td>
-          </tr>
-        `;
-      }
+        return createMoveTag(cleanName, '', isTutor);
+      }).join(' ');
     }
 
     function renderTable() {
