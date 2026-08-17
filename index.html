@@ -314,11 +314,36 @@
       }).join(' ');
     }
 
-    function formatMovesTM(str) {
+function formatMovesTM(str) {
       if (!str || str === '-') return '-';
-      return str.split(' | ').map(m => {
+      
+      const moves = str.split(' | ').map(m => m.trim()).filter(Boolean);
+      
+      const tutors = [];
+      const hms = [];
+      const tms = [];
+
+      moves.forEach(m => {
+        if (m.includes('(Tutor)')) {
+          tutors.push(m);
+        } else if (m.includes('(MN)') || m.includes('(HM)')) {
+          hms.push(m);
+        } else {
+          tms.push(m);
+        }
+      });
+
+      // Ordinamento alfabetico per ciascun gruppo
+      tutors.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
+      hms.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
+      tms.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
+
+      // Unione nell'ordine richiesto: Tutor -> MN -> MT
+      const sortedMoves = [...tutors, ...hms, ...tms];
+
+      return sortedMoves.map(m => {
         const isTutor = m.includes('(Tutor)');
-        const cleanName = m.replace(' (Tutor)', '').trim();
+        const cleanName = m.replace(' (Tutor)', '').replace(' (MN)', '').replace(' (HM)', '').trim();
         return createMoveTag(cleanName, '', isTutor);
       }).join(' ');
     }
