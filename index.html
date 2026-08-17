@@ -317,6 +317,9 @@
 function formatMovesTM(str) {
       if (!str || str === '-') return '-';
       
+      // Lista esatta delle 7 MN di Rosso Fuoco / Verde Foglia
+      const HM_LIST = ['taglio', 'volo', 'surf', 'forza', 'flash', 'spaccaroccia', 'cascata'];
+      
       const moves = str.split(' | ').map(m => m.trim()).filter(Boolean);
       
       const tutors = [];
@@ -324,17 +327,20 @@ function formatMovesTM(str) {
       const tms = [];
 
       moves.forEach(m => {
-        // Riconosce MN se contiene (MN), (HM) o la parola MN
-        if (m.includes('(Tutor)')) {
+        const lower = m.toLowerCase();
+        // Estrae il nome pulito senza etichette tra parentesi per controllare il match esatto
+        const cleanForCheck = lower.replace(/\s*\((tutor|mn|hm)\)/gi, '').trim();
+        
+        if (lower.includes('(tutor)')) {
           tutors.push(m);
-        } else if (/\b(MN|HM)\b/i.test(m)) {
+        } else if (lower.includes('(mn)') || lower.includes('(hm)') || HM_LIST.includes(cleanForCheck)) {
           hms.push(m);
         } else {
           tms.push(m);
         }
       });
 
-      // Ordinamento alfabetico per ogni gruppo
+      // Ordinamento alfabetico per ogni categoria
       tutors.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
       hms.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
       tms.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
@@ -343,9 +349,8 @@ function formatMovesTM(str) {
       const sortedMoves = [...tutors, ...hms, ...tms];
 
       return sortedMoves.map(m => {
-        const isTutor = m.includes('(Tutor)');
-        // Pulizia etichette per l'output pulito
-        const cleanName = m.replace(/\s*\((Tutor|MN|HM)\)/gi, '').replace(/\b(MN|HM)\b/gi, '').trim();
+        const isTutor = m.toLowerCase().includes('(tutor)');
+        const cleanName = m.replace(/\s*\((Tutor|MN|HM)\)/gi, '').trim();
         return createMoveTag(cleanName, '', isTutor);
       }).join(' ');
     }
