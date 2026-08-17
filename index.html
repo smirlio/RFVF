@@ -90,6 +90,21 @@
       cursor: pointer;
       font-weight: bold;
     }
+    #pokedex-body td {
+  vertical-align: middle;
+  padding: 6px 8px;
+}
+
+#pokedex-body td:nth-child(2) {
+  width: 56px;
+  text-align: center;
+}
+
+#pokedex-body img {
+  image-rendering: pixelated;
+  display: block;
+  margin: 0 auto;
+}
   </style>
 </head>
 <body>
@@ -145,12 +160,12 @@
       // PSICO
       'psichico': 'Psico', 'riposo': 'Psico', 'mangiasogni': 'Psico', 'calmamente': 'Psico',
       'baratto': 'Psico', 'schermoluce': 'Psico', 'riflesso': 'Psico', 'teletrasporto': 'Psico',
-      'confusione': 'Psico', 'cinèsi': 'Psico', 'cinesi': 'Psico', 'amnesia': 'Psico', 'lucecannone': 'Psico',
+      'confusione': 'Psico', 'cinèsi': 'Psico', 'cinesi': 'Psico', 'amnesia': 'Psico', 'giocodiruolo': 'Psico',
       'psicoraggio': 'Psico', 'cometpugno': 'Psico', 'ipnosi': 'Psico', 'barriera': 'Psico',
-      'meditazione': 'Psico', 'divinazione': 'Psico', 'agilità': 'Psico', 'Psicamisù': 'Psico',
+      'meditazione': 'Psico', 'divinazione': 'Psico', 'agilità': 'Psico', 'psicamisù': 'Psico',
 
       // LOTTA
-      'contrattacco': 'Lotta', 'movim. sismico': 'Lotta', 'movim sismico': 'Lotta', 'centripugno': 'Lotta',
+      'contrattacco': 'Lotta', 'movim. sismico': 'Lotta', 'calciorullo': 'Lotta', 'centripugno': 'Lotta',
       'breccia': 'Lotta', 'granfisico': 'Lotta', 'spaccaroccia': 'Lotta', 'sottomissione': 'Lotta',
       'colpo basso': 'Lotta', 'incrocolpo': 'Lotta', 'calciosalto': 'Lotta', 'dinamipugno': 'Lotta',
       'pugnorapido': 'Lotta', 'calciovolante': 'Lotta', 'triplocalcio': 'Lotta', 'colpokarate': 'Lotta',
@@ -161,23 +176,24 @@
       'rotolamento': 'Roccia', 'sassata': 'Roccia', 'cadutamassi': 'Roccia', 'ruotafangosa': 'Roccia',
 
       // TERRA
-      'terremoto': 'Terra', 'fossa': 'Terra', 'colpo di coda': 'Terra', 'fangata': 'Terra',
+      'terremoto': 'Terra', 'fossa': 'Terra', 'ossoclava': 'Terra', 'fangata': 'Terra',
       'turbosabbia': 'Terra', 'magnitudo': 'Terra', 'abisso': 'Terra', 'colpodifango': 'Terra',
+      'ossomerang': 'Terra', 'ossoraffica': 'Terra',
 
       // FUOCO
       'lanciafiamme': 'Fuoco', 'fuocobomba': 'Fuoco', 'giornodisole': 'Fuoco', 'vampata': 'Fuoco',
       'braciere': 'Fuoco', 'ruotafuoco': 'Fuoco', 'fuocopugno': 'Fuoco', 'ruotafuoco': 'Fuoco',
-      'turbofuoco': 'Fuoco', 'ondacaldo': 'Fuoco',
+      'turbofuoco': 'Fuoco', 'ondacalda': 'Fuoco',
 
       // ACQUA
       'surf': 'Acqua', 'cascata': 'Acqua', 'pioggiadanza': 'Acqua', 'sub': 'Acqua', 'idropulsar': 'Acqua',
-      'pistolacqua': 'Acqua', 'idropompa': 'Acqua', 'bolla': 'Acqua', 'bollabella': 'Acqua',
-      'mulinello': 'Acqua', 'bollaraggio': 'Acqua', 'sparabolle': 'Acqua', 'martellata': 'Acqua',
+      'pistolacqua': 'Acqua', 'idropompa': 'Acqua', 'bolla': 'Acqua', 'ritirata': 'Acqua',
+      'mulinello': 'Acqua', 'bollaraggio': 'Acqua', 'docciascudo': 'Acqua', 'martellata': 'Acqua',
 
       // ERBA
       'solarraggio': 'Erba', 'gigassorbimento': 'Erba', 'semitraglia': 'Erba', 'parassiseme': 'Erba',
       'frustata': 'Erba', 'sonnifero': 'Erba', 'foglielama': 'Erba', 'sintesi': 'Erba',
-      'parassita': 'Erba', 'erbavita': 'Erba', 'radicalbero': 'Erba', 'assorbimento': 'Erba',
+      'parassita': 'Erba', 'fogliamagica': 'Erba', 'radicalbero': 'Erba', 'assorbimento': 'Erba',
       'paralizzante': 'Erba', 'paraliz. spora': 'Erba', 'paraliz spora': 'Erba', 'spora': 'Erba',
       'megassorbimento': 'Erba',
 
@@ -187,12 +203,13 @@
 
       // GHIACCIO
       'geloraggio': 'Ghiaccio', 'bora': 'Ghiaccio', 'grandine': 'Ghiaccio', 'raggiaurora': 'Ghiaccio',
-      'nube': 'Ghiaccio', 'pugnogelo': 'Ghiaccio', 'ventogelato': 'Ghiaccio', 'purogelo': 'Ghiaccio',
+      'nube': 'Ghiaccio', 'gelopugno': 'Ghiaccio', 'ventogelato': 'Ghiaccio', 'purogelo': 'Ghiaccio',
+      'polneve': 'Ghiaccio', 'nebbia': 'Ghiaccio',
 
       // VELENO
       'tossina': 'Veleno', 'fangobomba': 'Veleno', 'velenpolvere': 'Veleno', 'acido': 'Veleno',
-      'velendenti': 'Veleno', 'velencoda': 'Veleno', 'smog': 'Veleno', 'velenoshock': 'Veleno',
-      'velenospina': 'Veleno', 'velenodenti': 'Veleno', 'scudo acido': 'Veleno',
+      'velendenti': 'Veleno', 'fango': 'Veleno', 'smog': 'Veleno', 'velenoshock': 'Veleno',
+      'velenospina': 'Veleno', 'velenodenti': 'Veleno', 'scudo acido': 'Veleno', 'velenogas': 'Veleno',
 
       // SPETTRO
       'palla ombra': 'Spettro', 'maledizione': 'Spettro', 'leccata': 'Spettro', 'ombra notturna': 'Spettro',
@@ -201,7 +218,7 @@
       // BUIO
       'morsura': 'Buio', 'morso': 'Buio', 'sgranocchio': 'Buio', 'furto': 'Buio', 'scippo': 'Buio',
       'provocazione': 'Buio', 'inseguimento': 'Buio', 'finta': 'Buio', 'garanzia': 'Buio',
-      'vendetta': 'Buio', 'falsacopia': 'Buio', 'privazione': 'Buio',
+      'vendetta': 'Buio', 'falselacrime': 'Buio', 'privazione': 'Buio',
 
       // VOLANTE
       'volo': 'Volante', 'aeroassalto': 'Volante', 'raffica': 'Volante', 'beccata': 'Volante',
@@ -209,7 +226,7 @@
       'perforbecco': 'Volante', 'danzadipiume': 'Volante', 'aerasoio': 'Volante', 'speculmossa': 'Volante', 'Rimbalzo': 'Volante',
 
       // COLEOTTERO
-      'coleottero': 'Coleottero', 'segnalraggio': 'Coleottero', 'tagliodoppio': 'Coleottero',
+      'tagliofuria': 'Coleottero', 'megacorno': 'Coleottero', 'tagliodoppio': 'Coleottero',
       'furia': 'Coleottero', 'turbine': 'Coleottero', 'ventargenteo': 'Coleottero', 'missilspillo': 'Coleottero',
 
       // ACCIAIO
@@ -218,7 +235,7 @@
 
       // DRAGO
       'dragartigli': 'Drago', 'dragofuria': 'Drago', 'oltraggio': 'Drago', 'ira di drago': 'Drago',
-      'dragodanza': 'Drago', 'dragoclorofilla': 'Drago',
+      'dragodanza': 'Drago', 'tornado': 'Drago',
 
       // NORMALE
       'botta': 'Normale', 'trasformazione': 'Normale', 'megapugno': 'Normale', 'metronomo': 'Normale',
@@ -228,7 +245,7 @@
       'doppioteam': 'Normale', 'flash': 'Normale', 'protezione': 'Normale', 'attrazione': 'Normale',
       'ritorno': 'Normale', 'frustrazione': 'Normale', 'salvaguardia': 'Normale', 'introforza': 'Normale',
       'attaccalite': 'Normale', 'facciata': 'Normale', 'forzasegreta': 'Normale', 'ruggito': 'Normale',
-      'profumino': 'Normale', 'crescita': 'Normale', 'autodistruzione': 'Normale', 'attacco rapido': 'Normale',
+      'profumino': 'Normale', 'crescita': 'Erba', 'autodistruzione': 'Normale', 'attacco rapido': 'Normale',
       'pazienza': 'Normale', 'muro di fumo': 'Normale', 'stridio': 'Normale', 'azione': 'Normale'
     };
 
@@ -322,7 +339,7 @@
         tbody.innerHTML += `
           <tr>
             <td style="color:#888; font-weight:bold; text-align:center;">#${String(p.id).padStart(3, '0')}</td>
-            <td><img src="${imgUrl}" width="32" height="32" style="image-rendering:pixelated;"></td>
+            <td><img src="${imgUrl}" width="48" height="48" style="image-rendering:pixelated;"></td>
             <td>
               <span class="pkmn-name">${p.nome}</span>
               <div>${tiposHtml}</div>
