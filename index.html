@@ -324,26 +324,28 @@ function formatMovesTM(str) {
       const tms = [];
 
       moves.forEach(m => {
+        // Riconosce MN se contiene (MN), (HM) o la parola MN
         if (m.includes('(Tutor)')) {
           tutors.push(m);
-        } else if (m.includes('(MN)') || m.includes('(HM)')) {
+        } else if (/\b(MN|HM)\b/i.test(m)) {
           hms.push(m);
         } else {
           tms.push(m);
         }
       });
 
-      // Ordinamento alfabetico per ciascun gruppo
+      // Ordinamento alfabetico per ogni gruppo
       tutors.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
       hms.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
       tms.sort((a, b) => a.localeCompare(b, 'it', { sensitivity: 'base' }));
 
-      // Unione nell'ordine richiesto: Tutor -> MN -> MT
+      // Unione: Tutor -> MN -> MT
       const sortedMoves = [...tutors, ...hms, ...tms];
 
       return sortedMoves.map(m => {
         const isTutor = m.includes('(Tutor)');
-        const cleanName = m.replace(' (Tutor)', '').replace(' (MN)', '').replace(' (HM)', '').trim();
+        // Pulizia etichette per l'output pulito
+        const cleanName = m.replace(/\s*\((Tutor|MN|HM)\)/gi, '').replace(/\b(MN|HM)\b/gi, '').trim();
         return createMoveTag(cleanName, '', isTutor);
       }).join(' ');
     }
