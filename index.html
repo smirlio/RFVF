@@ -140,25 +140,87 @@
       'Roccia': '#B8A038', 'Spettro': '#705898', 'Drago': '#7038F8', 'Acciaio': '#B8B8D0', 'Buio': '#705848'
     };
 
-    // Dizionario completo mosse di Terza Generazione
-    const MOVES_DATABASE = {
-      'Azione': 'Normale', 'Ruggito': 'Normale', 'Parassiseme': 'Erba', 'Frustata': 'Erba',
-      'Velenpolvere': 'Veleno', 'Sonnifero': 'Erba', 'Foglielama': 'Erba', 'Profumino': 'Normale',
-      'Crescita': 'Normale', 'Sintesi': 'Erba', 'Solarraggio': 'Erba', 'Danzaspada': 'Normale',
-      'Corposcontro': 'Normale', 'Sdoppiatore': 'Normale', 'Mimica': 'Normale', 'Sostituto': 'Normale',
-      'Gigassorbimento': 'Erba', 'Attrazione': 'Normale', 'Ritorno': 'Normale', 'Frustrazione': 'Normale',
-      'Introforza': 'Normale', 'Giornodisole': 'Fuoco', 'Taglio': 'Normale', 'Forza': 'Normale',
-      'Flash': 'Normale', 'Riposo': 'Psico', 'Protezione': 'Normale', 'Fangobomba': 'Veleno',
-      'Semitraglia': 'Erba', 'Radicalbero': 'Erba', 'Braciere': 'Fuoco', 'Pistolacqua': 'Acqua',
-      'Lanciafiamme': 'Fuoco', 'Pioggiadanza': 'Acqua', 'Terremoto': 'Terra', 'Fossa': 'Terra',
-      'Fossile': 'Roccia', 'Frana': 'Roccia', 'Rotolamento': 'Roccia', 'Forzaspada': 'Normale',
-      'Maledizione': 'Spettro', 'Palla Ombra': 'Spettro', 'Fulmine': 'Elettro', 'Tuono': 'Elettro',
-      'Onda Anomala': 'Acqua', 'Idropompa': 'Acqua', 'Bolla': 'Acqua', 'Gelo': 'Ghiaccio',
-      'Geloraggio': 'Ghiaccio', 'Brezza': 'Ghiaccio', 'Sottomissione': 'Lotta', 'Colpo Basso': 'Lotta',
-      'Incrocolpo': 'Lotta', 'Volo': 'Volante', 'Aeroassalto': 'Volante', 'Raffica': 'Volante',
-      'Psichico': 'Psico', 'Confusione': 'Psico', 'Morsura': 'Buio', 'Sgranocchio': 'Buio',
-      'Ferroartigli': 'Acciaio', 'Metalcoppia': 'Acciaio', 'Dragofuria': 'Drago', 'Iper Raggio': 'Normale',
-      'Coleottero': 'Coleottero'
+const MOVES_DATABASE = {
+      // PSICO
+      'psichico': 'Psico', 'riposo': 'Psico', 'mangiasogni': 'Psico', 'calmamente': 'Psico',
+      'baratto': 'Psico', 'schermoluce': 'Psico', 'riflesso': 'Psico', 'teletrasporto': 'Psico',
+      'confusione': 'Psico', 'cinestesi': 'Psico', 'amnesia': 'Psico', 'lucecannone': 'Psico',
+      'psicoraggio': 'Psico', 'Cometpugno': 'Psico', 'ipnosi': 'Psico', 'Barriera': 'Psico',
+
+      // LOTTA
+      'contrattacco': 'Lotta', 'movim. sismico': 'Lotta', 'centripugno': 'Lotta', 'breccia': 'Lotta',
+      'granfisico': 'Lotta', 'spaccaroccia': 'Lotta', 'sottomissione': 'Lotta', 'colpo basso': 'Lotta',
+      'incrocolpo': 'Lotta', 'calciosalto': 'Lotta', 'dinamipugno': 'Lotta', 'pugnorapido': 'Lotta',
+      'calciovolante': 'Lotta', 'triplocalcio': 'Lotta', 'ruotacalcio': 'Lotta',
+
+      // ROCCIA
+      'forzantica': 'Roccia', 'frana': 'Roccia', 'terrempesta': 'Roccia', 'rocciotomba': 'Roccia',
+      'rotolamento': 'Roccia', 'sassata': 'Roccia', 'fossile': 'Roccia',
+
+      // TERRA
+      'terremoto': 'Terra', 'fossa': 'Terra', 'colpo di coda': 'Terra', 'paltoroccia': 'Terra',
+      'turb sabbia': 'Terra', 'abisso': 'Terra',
+
+      // FUOCO
+      'lanciafiamme': 'Fuoco', 'fuocobomba': 'Fuoco', 'giornodisole': 'Fuoco', 'vampata': 'Fuoco',
+      'braciere': 'Fuoco', 'ruotafuoco': 'Fuoco', 'pugnofuoco': 'Fuoco', 'vettorfuoco': 'Fuoco',
+
+      // ACQUA
+      'surf': 'Acqua', 'cascata': 'Acqua', 'pioggiadanza': 'Acqua', 'sub': 'Acqua', 'idropulsar': 'Acqua',
+      'pistolacqua': 'Acqua', 'idropompa': 'Acqua', 'bolla': 'Acqua', 'bollabella': 'Acqua',
+      'mulinello': 'Acqua', 'pinzone': 'Acqua', 'sparabolle': 'Acqua',
+
+      // ERBA
+      'solarraggio': 'Erba', 'gigassorbimento': 'Erba', 'semitraglia': 'Erba', 'parassiseme': 'Erba',
+      'frustata': 'Erba', 'sonnifero': 'Erba', 'foglielama': 'Erba', 'sintesi': 'Erba',
+      'parassita': 'Erba', 'erbavita': 'Erba', 'radicalbero': 'Erba', 'assorbimento': 'Erba',
+
+      // ELETTRO
+      'tuononda': 'Elettro', 'fulmine': 'Elettro', 'tuono': 'Elettro', 'ondashock': 'Elettro',
+      'pugnoelettro': 'Elettro', 'tuonoshock': 'Elettro', 'sottocarica': 'Elettro', 'scintilla': 'Elettro',
+
+      // GHIACCIO
+      'geloraggio': 'Ghiaccio', 'bora': 'Ghiaccio', 'grandine': 'Ghiaccio', 'gelo': 'Ghiaccio',
+      'brezza': 'Ghiaccio', 'pugnogelo': 'Ghiaccio', 'vento gelato': 'Ghiaccio', 'valanga': 'Ghiaccio',
+
+      // VELENO
+      'tossina': 'Veleno', 'fangobomba': 'Veleno', 'velenpolvere': 'Veleno', 'acido': 'Veleno',
+      'velendenti': 'Veleno', 'velencoda': 'Veleno', 'smog': 'Veleno', 'velenoshock': 'Veleno',
+
+      // SPETTRO
+      'palla ombra': 'Spettro', 'maledizione': 'Spettro', 'leccata': 'Spettro', 'ombra notturna': 'Spettro',
+      'stordiraggio': 'Spettro', 'destinobbligato': 'Spettro',
+
+      // BUIO
+      'morsura': 'Buio', 'sgranocchio': 'Buio', 'furto': 'Buio', 'scippo': 'Buio', 'provocazione': 'Buio',
+      'inseguimento': 'Buio', 'finta': 'Buio', 'garanzia': 'Buio', 'picchiaduro': 'Buio', 'falsacopia': 'Buio',
+
+      // VOLANTE
+      'volo': 'Volante', 'aeroassalto': 'Volante', 'raffica': 'Volante', 'beccata': 'Volante',
+      'aereocolpo': 'Volante', 'attacco d\'ala': 'Volante', 'perforbecco': 'Volante',
+
+      // COLEOTTERO
+      'coleottero': 'Coleottero', 'segnalraggio': 'Coleottero', 'tagliodoppio': 'Coleottero',
+      'furia': 'Coleottero', 'turbine': 'Coleottero',
+
+      // ACCIAIO
+      'alacciaio': 'Acciaio', 'ferroartigli': 'Acciaio', 'metalcoppia': 'Acciaio',
+      'meteor pugno': 'Acciaio', 'ferromuro': 'Acciaio',
+
+      // DRAGO
+      'dragartigli': 'Drago', 'dragofuria': 'Drago', 'oltraggio': 'Drago', 'ira di drago': 'Drago',
+      'dragodanza': 'Drago', 'dragoclorofilla': 'Drago',
+
+      // NORMALE
+      'botta': 'Normale', 'trasformazione': 'Normale', 'megapugno': 'Normale', 'metronomo': 'Normale',
+      'danzaspada': 'Normale', 'megacalcio': 'Normale', 'corposcontro': 'Normale', 'sdoppiatore': 'Normale',
+      'mimica': 'Normale', 'covauova': 'Normale', 'esplosione': 'Normale', 'sostituto': 'Normale',
+      'taglio': 'Normale', 'boato': 'Normale', 'iper raggio': 'Normale', 'forza': 'Normale',
+      'doppioteam': 'Normale', 'flash': 'Normale', 'protezione': 'Normale', 'attrazione': 'Normale',
+      'ritorno': 'Normale', 'frustrazione': 'Normale', 'salvaguardia': 'Normale', 'codacciaio': 'Normale',
+      'introforza': 'Normale', 'attaccalite': 'Normale', 'facciata': 'Normale', 'baratto': 'Psico',
+      'forzasegreta': 'Normale', 'ruggito': 'Normale', 'profumino': 'Normale', 'crescita': 'Normale',
+      'autodistruzione': 'Normale', 'rapidoattacco': 'Normale', 'pazienza': 'Normale', 'mulinello': 'Normale'
     };
 
     let pokedexData = [];
@@ -197,16 +259,17 @@
       });
     }
 
-    function createMoveTag(moveName, label = '', isTutor = false) {
+   function createMoveTag(moveName, label = '', isTutor = false) {
       const cleanName = moveName.trim();
-      const moveType = MOVES_DATABASE[cleanName] || 'Normale';
+      const lookupKey = cleanName.toLowerCase();
+      
+      const moveType = MOVES_DATABASE[lookupKey] || 'Normale';
       const color = TYPE_COLORS[moveType] || '#A8A878';
       const text = label ? `<b style="color:#ffcc00">${label}</b> ${cleanName}` : cleanName;
       const extraClass = isTutor ? ' tutor-tag' : '';
       
       return `<span class="tag${extraClass}" style="background-color: ${color};">${text}</span>`;
     }
-
     function formatMovesLvl(str) {
       if (!str || str === '-') return '-';
       return str.split(' | ').map(m => {
