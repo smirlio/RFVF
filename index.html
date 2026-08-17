@@ -64,10 +64,22 @@
 
   .pkmn-name { font-weight: bold; color: var(--name-color); font-size: 14px; display: block; margin-bottom: 2px; } /* <-- Ingrandito */
   .type-badge { font-size: 10px; font-weight: bold; padding: 2px 5px; border-radius: 3px; color: #fff; margin-right: 2px; display: inline-block; } /* <-- Ingrandito (era 8px) */
-  .tag { display: inline-block; padding: 3px 5px; border-radius: 3px; font-size: 11px; margin: 1px; white-space: nowrap; } /* <-- Ingrandito (era 9px) */
-  .lvl-tag { background: var(--lvl-bg); border: 1px solid var(--lvl-border); color: var(--lvl-color); }
-  .tm-tag { background: #1e3a5f; color: #9bbdff; border: 1px solid #2b5288; }
-  .tutor-tag { background: #3b1e5f; color: #d8b4fe; border: 1px solid #572b88; }
+.tag { 
+  display: inline-block; 
+  padding: 3px 6px; 
+  border-radius: 4px; 
+  font-size: 11px; 
+  font-weight: bold; 
+  margin: 1px; 
+  white-space: nowrap; 
+  color: #ffffff; 
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7); 
+}
+
+.tutor-tag {
+  border: 1.5px dashed #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
 </style>
 </head>
 <body>
@@ -107,6 +119,7 @@
     </table>
   </div>
 
+  
   <script>
     const MY_PIN = "1234"; // Puoi cambiare qui il tuo PIN privato
     const TYPE_COLORS = {
@@ -212,6 +225,37 @@
         localStorage.setItem('theme', isLight ? 'light' : 'dark');
       });
     }
+  </script>
+<script>
+    // Mappa dei colori ufficiali dei tipi
+    const TYPE_COLORS = {
+      NORMAL: '#A8A878',
+      FIRE: '#F08030',
+      WATER: '#6890F0',
+      GRASS: '#78C850',
+      ELECTRIC: '#F8D030',
+      ICE: '#98D8D8',
+      FIGHTING: '#C03028',
+      POISON: '#A040A0',
+      GROUND: '#E0C068',
+      FLYING: '#A890F0',
+      PSYCHIC: '#F85888',
+      BUG: '#A8B820',
+      ROCK: '#B8A038',
+      GHOST: '#705898',
+      DRAGON: '#7038F8',
+      DARK: '#705848',
+      STEEL: '#B8B8D0',
+      FAIRY: '#EE99AC'
+    };
+  
+function createMoveTag(moveName, moveType, label = '', isTutor = false) {
+  const color = TYPE_COLORS[moveType?.toUpperCase()] || '#68A090';
+  const text = label ? `${label}: ${moveName}` : moveName;
+  const extraClass = isTutor ? ' tutor-tag' : '';
+  
+  return `<span class="tag${extraClass}" style="background-color: ${color};">${text}</span>`;
+}
   </script>
 </body>
 </html>
