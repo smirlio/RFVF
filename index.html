@@ -140,18 +140,20 @@
       'Roccia': '#B8A038', 'Spettro': '#705898', 'Drago': '#7038F8', 'Acciaio': '#B8B8D0', 'Buio': '#705848'
     };
 
-const MOVES_DATABASE = {
+// Dizionario aggiornato con le mosse mancanti
+    const MOVES_DATABASE = {
       // PSICO
       'psichico': 'Psico', 'riposo': 'Psico', 'mangiasogni': 'Psico', 'calmamente': 'Psico',
       'baratto': 'Psico', 'schermoluce': 'Psico', 'riflesso': 'Psico', 'teletrasporto': 'Psico',
       'confusione': 'Psico', 'cinestesi': 'Psico', 'amnesia': 'Psico', 'lucecannone': 'Psico',
-      'psicoraggio': 'Psico', 'Cometpugno': 'Psico', 'ipnosi': 'Psico', 'Barriera': 'Psico',
+      'psicoraggio': 'Psico', 'cometpugno': 'Psico', 'ipnosi': 'Psico', 'barriera': 'Psico',
+      'speculmossa': 'Normale',
 
       // LOTTA
       'contrattacco': 'Lotta', 'movim. sismico': 'Lotta', 'centripugno': 'Lotta', 'breccia': 'Lotta',
       'granfisico': 'Lotta', 'spaccaroccia': 'Lotta', 'sottomissione': 'Lotta', 'colpo basso': 'Lotta',
       'incrocolpo': 'Lotta', 'calciosalto': 'Lotta', 'dinamipugno': 'Lotta', 'pugnorapido': 'Lotta',
-      'calciovolante': 'Lotta', 'triplocalcio': 'Lotta', 'ruotacalcio': 'Lotta',
+      'calciovolante': 'Lotta', 'triplocalcio': 'Lotta', 'ruotacalcio': 'Lotta', 'doppiocalcio': 'Lotta',
 
       // ROCCIA
       'forzantica': 'Roccia', 'frana': 'Roccia', 'terrempesta': 'Roccia', 'rocciotomba': 'Roccia',
@@ -164,6 +166,7 @@ const MOVES_DATABASE = {
       // FUOCO
       'lanciafiamme': 'Fuoco', 'fuocobomba': 'Fuoco', 'giornodisole': 'Fuoco', 'vampata': 'Fuoco',
       'braciere': 'Fuoco', 'ruotafuoco': 'Fuoco', 'pugnofuoco': 'Fuoco', 'vettorfuoco': 'Fuoco',
+      'turbofuoco': 'Fuoco',
 
       // ACQUA
       'surf': 'Acqua', 'cascata': 'Acqua', 'pioggiadanza': 'Acqua', 'sub': 'Acqua', 'idropulsar': 'Acqua',
@@ -186,6 +189,7 @@ const MOVES_DATABASE = {
       // VELENO
       'tossina': 'Veleno', 'fangobomba': 'Veleno', 'velenpolvere': 'Veleno', 'acido': 'Veleno',
       'velendenti': 'Veleno', 'velencoda': 'Veleno', 'smog': 'Veleno', 'velenoshock': 'Veleno',
+      'velenospina': 'Veleno', 'velenodenti': 'Veleno',
 
       // SPETTRO
       'palla ombra': 'Spettro', 'maledizione': 'Spettro', 'leccata': 'Spettro', 'ombra notturna': 'Spettro',
@@ -198,14 +202,15 @@ const MOVES_DATABASE = {
       // VOLANTE
       'volo': 'Volante', 'aeroassalto': 'Volante', 'raffica': 'Volante', 'beccata': 'Volante',
       'aereocolpo': 'Volante', 'attacco d\'ala': 'Volante', 'perforbecco': 'Volante',
+      'danzadipiume': 'Volante', 'aerasoio': 'Volante',
 
       // COLEOTTERO
       'coleottero': 'Coleottero', 'segnalraggio': 'Coleottero', 'tagliodoppio': 'Coleottero',
       'furia': 'Coleottero', 'turbine': 'Coleottero',
 
       // ACCIAIO
-      'alacciaio': 'Acciaio', 'ferroartigli': 'Acciaio', 'metalcoppia': 'Acciaio',
-      'meteor pugno': 'Acciaio', 'ferromuro': 'Acciaio',
+      'alacciaio': 'Acciaio', 'ferroartigli': 'Acciaio', 'ferrartigli': 'Acciaio', 'metalcoppia': 'Acciaio',
+      'meteor pugno': 'Acciaio', 'ferromuro': 'Acciaio', 'codacciaio': 'Acciaio',
 
       // DRAGO
       'dragartigli': 'Drago', 'dragofuria': 'Drago', 'oltraggio': 'Drago', 'ira di drago': 'Drago',
@@ -217,8 +222,8 @@ const MOVES_DATABASE = {
       'mimica': 'Normale', 'covauova': 'Normale', 'esplosione': 'Normale', 'sostituto': 'Normale',
       'taglio': 'Normale', 'boato': 'Normale', 'iper raggio': 'Normale', 'forza': 'Normale',
       'doppioteam': 'Normale', 'flash': 'Normale', 'protezione': 'Normale', 'attrazione': 'Normale',
-      'ritorno': 'Normale', 'frustrazione': 'Normale', 'salvaguardia': 'Normale', 'codacciaio': 'Normale',
-      'introforza': 'Normale', 'attaccalite': 'Normale', 'facciata': 'Normale', 'baratto': 'Psico',
+      'ritorno': 'Normale', 'frustrazione': 'Normale', 'salvaguardia': 'Normale',
+      'introforza': 'Normale', 'attaccalite': 'Normale', 'facciata': 'Normale',
       'forzasegreta': 'Normale', 'ruggito': 'Normale', 'profumino': 'Normale', 'crescita': 'Normale',
       'autodistruzione': 'Normale', 'rapidoattacco': 'Normale', 'pazienza': 'Normale', 'mulinello': 'Normale'
     };
