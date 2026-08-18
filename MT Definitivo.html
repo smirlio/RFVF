@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista MT e MN</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --card-bg: #1e1e1e;
+      --border-color: #333333;
+      --row-even: #181818;
+      --row-border: #2a2a2a;
+    }
+
+    body.light-mode {
+      --bg-color: #ffffff;
+      --text-color: #1a1a1a;
+      --card-bg: #f5f5f5;
+      --border-color: #cccccc;
+      --row-even: #ededed;
+      --row-border: #e0e0e0;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 12px;
+    }
+
+    .nav-bar { display: flex; gap: 8px; margin-bottom: 15px; align-items: center; flex-wrap: wrap; }
+    .search-input {
+      flex: 1;
+      min-width: 180px;
+      padding: 8px 12px;
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      color: var(--text-color);
+      font-size: 15px;
+    }
+
+    .btn {
+      padding: 8px 12px;
+      background: #3b4cca;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    table { width: 100%; border-collapse: collapse; background: var(--card-bg); border-radius: 6px; overflow: hidden; }
+    th { background: #3b4cca; color: #fff; padding: 10px 6px; font-size: 13px; text-transform: uppercase; text-align: left; }
+    td { padding: 8px 6px; border-bottom: 1px solid var(--row-border); font-size: 13px; vertical-align: middle; }
+    tr:nth-child(even) { background: var(--row-even); }
+
+    .tag-id { font-weight: bold; color: #3b4cca; display: inline-block; width: 45px; }
+    .type-badge {
+      font-size: 10px;
+      font-weight: bold;
+      padding: 3px 6px;
+      border-radius: 4px;
+      color: #fff;
+      display: inline-block;
+      text-transform: uppercase;
+    }
+    .stat-val { font-weight: 600; text-align: center; }
+    .move-name { font-weight: bold; white-space: nowrap; }
+    .desc-cell { font-size: 12px; color: #b0b0b0; }
+  </style>
+</head>
+<body>
+
+ <div class="nav-bar">
+  <a href="index.html" class="btn">← Indietro</a>
+  <input type="text" id="search" class="search-input" placeholder="Cerca mossa, tipo o posizione..." oninput="renderTable()">
+  <button class="btn" onclick="document.body.classList.toggle('light-mode')">☀️ Chiaro / Scuro</button>
+</div>
+
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 50px;">MT</th>
+        <th style="width: 1%; white-space: nowrap;">Mossa</th>
+        <th style="width: 70px;">Tipo</th>
+        <th style="width: 45px; text-align:center;">Danno</th>
+        <th style="width: 35px; text-align:center;">PP</th>
+        <th style="width: 180px;">Posizione</th>
+        <th>Descrizione</th>
+      </tr>
+    </thead>
+    <tbody id="mt-body"></tbody>
+  </table>
+
+  <script>
+    const TYPE_COLORS = {
+      'Normale': '#A8A878', 'Fuoco': '#F08030', 'Acqua': '#6890F0', 'Erba': '#78C850',
+      'Elettro': '#F8D030', 'Ghiaccio': '#98D8D8', 'Lotta': '#C03028', 'Veleno': '#A040A0',
+      'Terra': '#E0C068', 'Volante': '#A890F0', 'Psico': '#F85888', 'Coleottero': '#A8B820',
+      'Roccia': '#B8A038', 'Spettro': '#705898', 'Drago': '#7038F8', 'Acciaio': '#B8B8D0', 'Buio': '#705848'
+    };
+
+    const MOVES_DATA = [
+      { id: 'MT01', name: 'Centripugno', type: 'Lotta', pow: '150', pp: '20', loc: 'Silph SpA 4°P', desc: 'Mossa potente con priorità bassa; fallisce se chi la usa viene colpito prima.' },
+      { id: 'MT02', name: 'Dragartigli', type: 'Drago', pow: '80', pp: '15', loc: 'Via Vittoria (PT)', desc: 'Attacca il bersaglio con artigli affilati.' },
+      { id: 'MT03', name: 'Idropulsar', type: 'Acqua', pow: '60', pp: '20', loc: 'Palestra di Celestopoli (Misty)', desc: 'Può confondere il bersaglio (20% di probabilità).' },
+      { id: 'MT04', name: 'Calmamente', type: 'Psico', pow: '—', pp: '20', loc: 'Palestra di Zafferanopoli (Sabrina)', desc: 'Aumenta l\'Attacco Speciale e la Difesa Speciale di 1 stadio.' },
+      { id: 'MT05', name: 'Boato', type: 'Normale', pow: '—', pp: '20', loc: 'Percorso 4 / C.C. Azzurropoli', desc: 'Costringe il bersaglio a fuggire o a farsi sostituire. Priorità bassa.' },
+      { id: 'MT06', name: 'Tossina', type: 'Veleno', pow: '—', pp: '10', loc: 'Palestra di Fucsiapoli (Koga)', desc: 'Iperavvelena il bersaglio; il danno aumenta ad ogni turno.' },
+      { id: 'MT07', name: 'Grandine', type: 'Ghiaccio', pow: '—', pp: '10', loc: 'Via Vittoria (1°P)', desc: 'Crea una tempesta di grandine per 5 turni, danneggiando i non-Ghiaccio.' },
+      { id: 'MT08', name: 'Granfisico', type: 'Lotta', pow: '—', pp: '20', loc: 'Silph SpA 6°P', desc: 'Aumenta l\'Attacco e la Difesa dell\'utilizzatore di 1 stadio.' },
+      { id: 'MT09', name: 'Semitraglia', type: 'Erba', pow: '9', pp: '30', loc: 'Monte Luna (PT)', desc: 'Spara da 2 a 5 semi consecutivi in un solo turno.' },
+      { id: 'MT10', name: 'Introforza', type: 'Normale', pow: 'Var.', pp: '15', loc: 'Utilizzare abilità Raccolta (5%)', desc: 'Tipo e potenza variano in base ai valori individuali (IV) del Pokémon.' },
+      { id: 'MT11', name: 'Giornodisole', type: 'Fuoco', pow: '—', pp: '5', loc: 'Zona Safari', desc: 'Aumenta la potenza delle mosse Fuoco per 5 turni e indebolisce l\'Acqua.' },
+      { id: 'MT12', name: 'Provocazione', type: 'Buio', pow: '—', pp: '20', loc: 'Rifugio Rocket', desc: 'Obbliga il bersaglio ad usare solo mosse di attacco per 2-3 turni.' },
+      { id: 'MT13', name: 'Geloraggio', type: 'Ghiaccio', pow: '95', pp: '10', loc: 'Casinò Azzurropoli', desc: 'Può congelare il bersaglio (10% di probabilità).' },
+      { id: 'MT14', name: 'Bora', type: 'Ghiaccio', pow: '120', pp: '5', loc: 'C.C. Azzurropoli', desc: 'Attacco di ghiaccio potente; può congelare (10% probabilità).' },
+      { id: 'MT15', name: 'Iper Raggio', type: 'Normale', pow: '150', pp: '5', loc: 'Casinò Azzurropoli', desc: 'Estremamente potente; richiede un turno di ricarica dopo l\'uso.' },
+      { id: 'MT16', name: 'Schermoluce', type: 'Psico', pow: '—', pp: '30', loc: 'C.C. Azzurropoli', desc: 'Riduce i danni da attacchi speciali subiti dalla squadra per 5 turni.' },
+      { id: 'MT17', name: 'Protezione', type: 'Normale', pow: '—', pp: '10', loc: 'Centrale Elettrica', desc: 'Evita tutti gli attacchi per quel turno. Può fallire se usata di seguito.' },
+      { id: 'MT18', name: 'Pioggiadanza', type: 'Acqua', pow: '—', pp: '5', loc: 'Percorso 15', desc: 'Aumenta le mosse Acqua per 5 turni e indebolisce le mosse Fuoco.' },
+      { id: 'MT19', name: 'Gigassorbimento', type: 'Erba', pow: '60', pp: '10', loc: 'Palestra di Azzurropoli (Erika)', desc: 'Recupera HP pari a metà del danno inflitto al bersaglio.' },
+      { id: 'MT20', name: 'Salvaguardia', type: 'Normale', pow: '—', pp: '25', loc: 'C.C. Azzurropoli', desc: 'Protegge la squadra da problemi di stato per 5 turni.' },
+      { id: 'MT21', name: 'Frustrazione', type: 'Normale', pow: 'Var.', pp: '20', loc: 'Rifugio Rocket', desc: 'La potenza è maggiore quanto minore è l\'affetto del Pokémon.' },
+      { id: 'MT22', name: 'Solarraggio', type: 'Erba', pow: '120', pp: '10', loc: 'Isola Cannella (Laboratorio)', desc: 'Carica al 1° turno ed attacca al 2°. Immediata sotto il sole.' },
+      { id: 'MT23', name: 'Codacciaio', type: 'Acciaio', pow: '100', pp: '15', loc: 'Casinò Azzurropoli', desc: 'Può ridurre la Difesa del bersaglio di 1 stadio (30% probabilità).' },
+      { id: 'MT24', name: 'Fulmine', type: 'Elettro', pow: '95', pp: '15', loc: 'Palestra di Aranciopoli / Casinò', desc: 'Può paralizzare il bersaglio (10% di probabilità).' },
+      { id: 'MT25', name: 'Tuono', type: 'Elettro', pow: '120', pp: '10', loc: 'Centrale Elettrica', desc: 'Può paralizzare il bersaglio (30%). Precisione 100% sotto la pioggia.' },
+      { id: 'MT26', name: 'Terremoto', type: 'Terra', pow: '100', pp: '10', loc: 'Palestra di Smeraldopoli', desc: 'Colpisce tutti i Pokémon in campo. Danno raddoppiato su Fossa.' },
+      { id: 'MT27', name: 'Ritorno', type: 'Normale', pow: 'Var.', pp: '20', loc: 'Percorso 12', desc: 'La potenza è maggiore quanto maggiore è l\'affetto del Pokémon.' },
+      { id: 'MT28', name: 'Fossa', type: 'Terra', pow: '60', pp: '10', loc: 'Celestopoli', desc: 'Si scava una fossa al 1° turno e si attacca al 2°. Utile anche nei dungeon.' },
+      { id: 'MT29', name: 'Psichico', type: 'Psico', pow: '90', pp: '10', loc: 'Zafferanopoli / Casinò', desc: 'Può ridurre la Difesa Speciale del bersaglio di 1 stadio (10%).' },
+      { id: 'MT30', name: 'Palla Ombra', type: 'Spettro', pow: '80', pp: '15', loc: 'Azzurropoli (Casinò)', desc: 'Può ridurre la Difesa Speciale del bersaglio di 1 stadio (20%).' },
+      { id: 'MT31', name: 'Breccia', type: 'Lotta', pow: '75', pp: '15', loc: 'M/N Anna / Azzurropoli', desc: 'Distrugge le barriere Riflesso e Schermoluce prima di infliggere danno.' },
+      { id: 'MT32', name: 'Doppio Team', type: 'Normale', pow: '—', pp: '15', loc: 'Zona Safari', desc: 'Aumenta l\'Evasione dell\'utilizzatore di 1 stadio.' },
+      { id: 'MT33', name: 'Riflesso', type: 'Psico', pow: '—', pp: '20', loc: 'C.C. Azzurropoli', desc: 'Riduce i danni fisici subiti dalla squadra per 5 turni.' },
+      { id: 'MT34', name: 'Ondashock', type: 'Elettro', pow: '60', pp: '20', loc: 'Palestra di Aranciopoli (Lt. Surge)', desc: 'Attacco elettrico rapido che non fallisce mai.' },
+      { id: 'MT35', name: 'Lanciafiamme', type: 'Fuoco', pow: '95', pp: '15', loc: 'Casinò Azzurropoli', desc: 'Può scottare il bersaglio (10% di probabilità).' },
+      { id: 'MT36', name: 'Fangobomba', type: 'Veleno', pow: '90', pp: '10', loc: 'Magazzino Team Rocket (Quintisola)', desc: 'Può avvelenare il bersaglio (30% di probabilità).' },
+      { id: 'MT37', name: 'Terrempesta', type: 'Roccia', pow: '—', pp: '10', loc: 'Via Vittoria (2°P)', desc: 'Crea una tempesta di sabbia per 5 turni, danneggiando i non-Roccia/Terra/Acciaio.' },
+      { id: 'MT38', name: 'Fuocobomba', type: 'Fuoco', pow: '120', pp: '5', loc: 'Palestra Isola Cannella (Blaine)', desc: 'Forte attacco di fuoco; può scottare il bersaglio (10%).' },
+      { id: 'MT39', name: 'Rocciotomba', type: 'Roccia', pow: '50', pp: '10', loc: 'Palestra di Plumbeopoli (Brock)', desc: 'Riduce la Velocità del bersaglio di 1 stadio al 100%.' },
+      { id: 'MT40', name: 'Aeroassalto', type: 'Volante', pow: '60', pp: '20', loc: 'Percorso 9', desc: 'Attacco volante velocissimo che non fallisce mai.' },
+      { id: 'MT41', name: 'Attaccalite', type: 'Buio', pow: '—', pp: '15', loc: 'Silph SpA 4°P', desc: 'Impedisce al bersaglio di usare la stessa mossa due volte di seguito.' },
+      { id: 'MT42', name: 'Facciata', type: 'Normale', pow: '70', pp: '20', loc: 'Labirinto del Ricordo (Quintisola)', desc: 'Raddoppia la potenza se chi la usa è scottato, avvelenato o paralizzato.' },
+      { id: 'MT43', name: 'Forzasegreta', type: 'Normale', pow: '70', pp: '20', loc: 'Percorso 25 / C.C. Azzurropoli', desc: 'Attacco con un effetto secondario che varia in base al terreno di gioco.' },
+      { id: 'MT44', name: 'Riposo', type: 'Psico', pow: '—', pp: '10', loc: 'M/N Anna', desc: 'Chi la usa dorme per 2 turni, curando del tutto HP e problemi di stato.' },
+      { id: 'MT45', name: 'Attrazione', type: 'Normale', pow: '—', pp: '15', loc: 'Percorso 24 / C.C. Azzurropoli', desc: 'Sesso opposto ha il 50% di probabilità di non attaccare per innamoramento.' },
+      { id: 'MT46', name: 'Furto', type: 'Buio', pow: '40', pp: '10', loc: 'Monte Luna (S2)', desc: 'Può rubare lo strumento tenuto dal bersaglio se l\'utilizzatore non ne ha uno.' },
+      { id: 'MT47', name: 'Alacciaio', type: 'Acciaio', pow: '70', pp: '25', loc: 'Zona Safari', desc: 'Può aumentare la Difesa dell\'utilizzatore di 1 stadio (10%).' },
+      { id: 'MT48', name: 'Scambio', type: 'Psico', pow: '—', pp: '10', loc: 'Percorso 12', desc: 'Scambia le abilità speciali tra l\'utilizzatore e il bersaglio.' },
+      { id: 'MT49', name: 'Scippo', type: 'Buio', pow: '—', pp: '10', loc: 'Rifugio Rocket', desc: 'Ruba gli effetti di cura o aumento statistiche usati dall\'avversario.' },
+      { id: 'MT50', name: 'Vampata', type: 'Fuoco', pow: '140', pp: '5', loc: 'Via Vittoria (3°P)', desc: 'Attacco devastante che riduce l\'Attacco Speciale di chi la usa di 2 stadi.' }
+    ];
+
+    function renderTable() {
+      const search = document.getElementById('search').value.toLowerCase();
+      const tbody = document.getElementById('mt-body');
+      tbody.innerHTML = '';
+
+      MOVES_DATA.filter(m => {
+        return m.id.toLowerCase().includes(search) ||
+               m.name.toLowerCase().includes(search) ||
+               m.loc.toLowerCase().includes(search) ||
+               m.type.toLowerCase().includes(search) ||
+               m.desc.toLowerCase().includes(search);
+      }).forEach(m => {
+        const color = TYPE_COLORS[m.type] || '#A8A878';
+        tbody.innerHTML += `
+          <tr>
+            <td><span class="tag-id">${m.id}</span></td>
+            <td class="move-name">${m.name}</td>
+            <td><span class="type-badge" style="background:${color};">${m.type}</span></td>
+            <td class="stat-val">${m.pow}</td>
+            <td class="stat-val">${m.pp}</td>
+            <td>${m.loc}</td>
+            <td class="desc-cell">${m.desc}</td>
+          </tr>
+        `;
+      });
+    }
+
+    renderTable();
+  </script>
+</body>
+</html>
