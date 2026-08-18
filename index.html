@@ -380,7 +380,7 @@ function formatMovesTM(str) {
         return (matchName || matchMoveLvl || matchMoveTM) && matchType;
       }).forEach(p => {
         const tiposHtml = p.tipi.map(t => `<span class="type-badge" style="background:${TYPE_COLORS[t] || '#68A090'}">${t.toUpperCase()}</span>`).join('');
-        const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-iii/firered-leafgreen/${p.id}.png`;
+        const imgUrl = `./sprites/${p.id}.png`;
 
         tbody.innerHTML += `
           <tr>
